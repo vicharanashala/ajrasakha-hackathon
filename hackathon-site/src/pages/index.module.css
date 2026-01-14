@@ -1,0 +1,110 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary,
+.secondary,
+.outline {
+  padding: 15px 36px;
+  border-radius: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #ffcc00;
+  color: black;
+}
+
+.secondary {
+  background: #00ffcc;
+  color: black;
+}
+
+.outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.primary:hover,
+.secondary:hover,
+.outline:hover {
+  transform: scale(1.1);
+}
+
+.prizes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 20px;
+}
+
+.prize {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 240px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.prize span {
+  display: block;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.gold { border: 3px solid gold; }
+.silver { border: 3px solid silver; }
+.bronze { border: 3px solid #cd7f32; }
