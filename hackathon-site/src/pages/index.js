@@ -1,35 +1,19 @@
-import styles from "./index.module.css";
 
-export default function Home() {
-  return (
-    <div className={styles.page}>
-      <section className={styles.hero}>
-        <h1>🚀 National Hackathon 2026</h1>
-        <p>Build. Compete. Win Big.</p>
+import '../components/Shared/Landing1.css'
+import CipherThon from "../components/Shared/Landing1"
+import HackathonSchedule from '../components/Shared/Landing2'
+import PrizeCards from '../components/Shared/Landing3'
+import CipherNavbar from '../components/Shared/Navbar'
+import CipherLayout from '../components/Layout'
 
-        <div className={styles.buttons}>
-          <a href="/register" className={styles.primary}>Register</a>
-          <a href="/join" className={styles.secondary}>Join</a>
-          <a href="/submit" className={styles.outline}>Submit</a>
-        </div>
-      </section>
-
-      <section className={styles.prizes}>
-        <div className={`${styles.prize} ${styles.gold}`}>
-          🥇 First Prize
-          <span>₹50,000</span>
-        </div>
-
-        <div className={`${styles.prize} ${styles.silver}`}>
-          🥈 Second Prize
-          <span>₹25,000</span>
-        </div>
-
-        <div className={`${styles.prize} ${styles.bronze}`}>
-          🥉 Third Prize
-          <span>₹10,000</span>
-        </div>
-      </section>
-    </div>
-  );
+export default function Page() {
+  return(
+    <>
+     <CipherLayout>
+      <CipherThon />
+      <HackathonSchedule />
+      <PrizeCards/>
+     </CipherLayout>
+     </>
+  )
 }
