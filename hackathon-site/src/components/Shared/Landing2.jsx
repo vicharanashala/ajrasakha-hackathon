@@ -8,32 +8,32 @@ export default function HackathonSchedule() {
       {
         id: 1,
         time: "Day 1",
-        phase: "Phase - I: Opening",
+        phase: "Kickoff & Onboarding",
         description:
-          "Official kickoff event. Join us for the opening ceremony and team formation sessions.",
-      },
-      {
-        id: 2,
-        time: "Day 2",
-        phase: "Phase - II: Mentoring",
-        description:
-          "Exclusive sessions with industry experts to refine your project architecture and strategy.",
-      },
-    ],
-    offline: [
-      {
-        id: 1,
-        time: "Day 1",
-        phase: "Opening Ceremony",
-        description:
-          "Welcome to the physical venue. Grab your swag kits and find your designated workspace.",
+          "The hackathon begins at the physical venue with a welcome session, swag kit distribution, and workspace allocation. Teams settle in, align on goals, and prepare for the build journey ahead.",
       },
       {
         id: 2,
         time: "Day 2",
         phase: "Coding Marathon",
         description:
-          "A non-stop 12-hour build session. Food and refreshments served at 3-hour intervals.",
+          "Exclusive An intense, non-stop development sprint where teams bring their ideas to life. Focus on core features, system integration, and functionality, with food and refreshments provided at regular intervals. with industry experts to refine your project architecture and strategy.",
+      },
+    ],
+    offline: [
+      {
+        id: 1,
+        time: "Day 1",
+        phase: "Restart & Alignment",
+        description:
+          "Teams reconvene at the venue, revisit their Phase 1 work, and align on improvements. The day sets the direction for refinement, optimization, and feature enhancement.",
+      },
+      {
+        id: 2,
+        time: "Day 2",
+        phase: "Restart & Alignment",
+        description:
+          "A focused development sprint dedicated to polishing the product. Teams improve stability, user experience, performance, and cost-efficiency while strengthening integration with the AjraSakha platform",
       },
     ],
   };

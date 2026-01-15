@@ -315,7 +315,7 @@ export default function CipherThon() {
             </div>
 
             <p className="cipher-description">
-              India's premier 48-hour development marathon is here. Build groundbreaking solutions, learn from industry architects, and compete for a significant reward pool.
+              A 48-hour hands-on hackathon designed for builders who learn by doing. Work in teams to solve real agricultural challenges and create meaningful features that integrate with a live production system—empowering farmers and strengthening digital agricultural ecosystems.
             </p>
 
             <div className="cipher-buttons">
