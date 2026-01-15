@@ -14,11 +14,17 @@ Please read them carefully before participating.
 
 ### Technical Requirements
 
-#### Mandatory Integration
-- ✅ **Must integrate with existing Ajrasakha MERN stack**
-- ✅ **Must be deployable within the existing system architecture**
-- ✅ **Cannot be a standalone application**
-- ⚠️ **Projects that cannot integrate will be considered failures**
+#### Project Readiness Guidelines
+- ✅ **The hackathon is primarily based on the **problem statements**, and every submitted solution must be **clean, deployable, and production-ready**, such that it can be **easily bridged or integrated into the Ajrasakha solution ecosystem**.  
+This will be **thoroughly verified by the judges during evaluation**.**
+**Important Notes:**
+- Your solution must be **architecturally compatible** with Ajrasakha’s technology stack.
+- The code should be **minimal, simple, readable, properly formatted, and well-documented**.
+- Submissions must be **deployable** without major rework.
+- Do **not blindly trust AI-generated code** — you are responsible for understanding, validating, and explaining everything you submit.
+####
+💡 **Bonus Consideration:**  
+Teams that choose to **improve or extend the existing Ajrasakha system** instead of building something parallel are **strongly encouraged** and will receive **additional weight during judging**.
 
 #### Technology Stack
 **Core (Required):**
@@ -423,6 +429,10 @@ By participating, you authorize annam.ai to:
 **Email:** aditya.bmv@annam.ai
 
 ### Technical Support Team
+
+**Nandan Prabudesai**  
+**Role:** Technical Support & Team Coordination  
+**Email:** nandanprabhudesai@annam.ai
 
 **Mamatha K**  
 **Role:** Technical Support & Team Coordination  
