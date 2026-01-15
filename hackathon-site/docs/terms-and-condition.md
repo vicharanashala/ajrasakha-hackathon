@@ -1,3 +1,6 @@
+---
+slug: /terms-and-condition
+---
 ## Eligibility & Registration
 
 ### Who Can Participate

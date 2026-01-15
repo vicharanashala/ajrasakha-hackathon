@@ -5,7 +5,7 @@
 
 ## Overview
 
-The **Ajrasakha Hackathon ** is a two-phase competitive event where teams of four will build innovative agricultural technology solutions that integrate with the **Ajrasakha system** - annam.ai's suite of open-source agricultural software. This hackathon focuses on creating practical, cost-effective, and scalable solutions for Indian farmers.
+The **Ajrasakha Hackathon** is a two-phase competitive event where teams of four will build innovative agricultural technology solutions that integrate with the **Ajrasakha system** - annam.ai's suite of open-source agricultural software. This hackathon focuses on creating practical, cost-effective, and scalable solutions for Indian farmers.
 
 ### Event Structure
 - **Phase 1:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM (48 hours)
@@ -13,7 +13,6 @@ The **Ajrasakha Hackathon ** is a two-phase competitive event where teams of fou
 - **Total Duration:** Two consecutive weekends, 96 hours of development time
 
 ---
-
 
 ## The Problem Statement
 
@@ -113,7 +112,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Voice input/output capabilities (highly encouraged)
 - Offline functionality where applicable
 - Visual aids (icons, illustrations, infographics)
-- Fast load times (<3 seconds on 3G)
+- Fast load times (under 3 seconds on 3G)
 
 #### Content Quality
 - Practical, actionable farming advice
@@ -147,7 +146,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - All teams automatically proceed to Phase 2 (no elimination)
 
 ### Phase 2: Improve & Refine (48 Hours)
-**Timeline:** 23 January 2026 ,8:00 PM to 25 January 2026, 10:00 PM
+**Timeline:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM
 
 **Objective:** Improve, refine, and strengthen your Phase 1 product
 
@@ -184,7 +183,7 @@ All solutions must be viable for **large-scale deployment in India**:
 
 #### 3. Video Demonstration
 - **Duration:** 2-5 minutes
-- **Format:** MP4, <100MB
+- **Format:** MP4, under 100MB
 - **Content:**
   - Problem you're solving
   - Solution walkthrough
@@ -223,16 +222,14 @@ All solutions must be viable for **large-scale deployment in India**:
 - Test data (if needed)
 - Database schema
 - Architecture diagrams
+
 ### Submission Deadlines
-- **Phase 1:** 18 January 2026 10:00 PM - **STRICT**
-- **Phase 2:** 25 January 2026 10:00 PM - **STRICT**
+- **Phase 1:** 18 January 2026, 10:00 PM - **STRICT**
+- **Phase 2:** 25 January 2026, 10:00 PM - **STRICT**
 - ⚠️ **No extensions will be granted**
 - 🚨 **Late submissions will NOT be accepted**
 
 ---
-
-
-
 
 ## Hackathon Timeline & Checkpoints
 
@@ -240,15 +237,15 @@ All solutions must be viable for **large-scale deployment in India**:
 
 | Timeframe | Milestone | Deliverables |
 |-----------|-----------|--------------|
-| **Hour 0-6** | Kickoff & Planning | - Review Ajrasakha repository<br>- Choose feature (provided or proposed)<br>- Finalize tech stack and roles<br>- Create integration plan<br>- Design wireframes and architecture |
-| **Hour 6-12** | Core Development - Foundation | - Set up development environment<br>- Create basic Ajrasakha integration<br>- Build core data models<br>- Set up APIs and routes |
-| **Hour 12-18** | Feature Development | - Implement main feature functionality<br>- Database integration<br>- Basic UI components<br>- **First Mentorship Checkpoint** |
-| **Hour 18-24** | Integration & Enhancement | - Strengthen Ajrasakha integration<br>- Add authentication/authorization<br>- Implement cost-effective solutions<br>- Mobile responsiveness |
-| **Hour 24-30** | Advanced Features | - Add secondary features<br>- Multilingual support<br>- Voice capabilities (if applicable)<br>- **Second Mentorship Checkpoint** |
-| **Hour 30-36** | Polish & Testing | - Bug fixes<br>- Mobile optimization<br>- Low-bandwidth testing<br>- Performance optimization |
-| **Hour 36-42** | Documentation & Deployment | - Code documentation<br>- README.md<br>- Deploy to live URL<br>- **Third Mentorship Checkpoint** |
-| **Hour 42-46** | Video & Presentation | - Create demo video<br>- Prepare presentation deck<br>- Test all submission materials |
-| **Hour 46-48** | Final Testing & Submission | - End-to-end testing<br>- Final code commit<br>- **Submit before 10:00 PM deadline** |
+| **Hour 0-6** | Kickoff & Planning | - Review Ajrasakha repository<br/>- Choose feature (provided or proposed)<br/>- Finalize tech stack and roles<br/>- Create integration plan<br/>- Design wireframes and architecture |
+| **Hour 6-12** | Core Development - Foundation | - Set up development environment<br/>- Create basic Ajrasakha integration<br/>- Build core data models<br/>- Set up APIs and routes |
+| **Hour 12-18** | Feature Development | - Implement main feature functionality<br/>- Database integration<br/>- Basic UI components<br/>- **First Mentorship Checkpoint** |
+| **Hour 18-24** | Integration & Enhancement | - Strengthen Ajrasakha integration<br/>- Add authentication/authorization<br/>- Implement cost-effective solutions<br/>- Mobile responsiveness |
+| **Hour 24-30** | Advanced Features | - Add secondary features<br/>- Multilingual support<br/>- Voice capabilities (if applicable)<br/>- **Second Mentorship Checkpoint** |
+| **Hour 30-36** | Polish & Testing | - Bug fixes<br/>- Mobile optimization<br/>- Low-bandwidth testing<br/>- Performance optimization |
+| **Hour 36-42** | Documentation & Deployment | - Code documentation<br/>- README.md<br/>- Deploy to live URL<br/>- **Third Mentorship Checkpoint** |
+| **Hour 42-46** | Video & Presentation | - Create demo video<br/>- Prepare presentation deck<br/>- Test all submission materials |
+| **Hour 46-48** | Final Testing & Submission | - End-to-end testing<br/>- Final code commit<br/>- **Submit before 10:00 PM deadline** |
 
 ### Break Between Phases
 - **Duration:** Approximately 1 week
@@ -260,11 +257,11 @@ All solutions must be viable for **large-scale deployment in India**:
 
 | Timeframe | Milestone | Focus Areas |
 |-----------|-----------|-------------|
-| **Hour 0-12** | Assessment & Planning | - Review Phase 1 feedback (if provided)<br>- Identify improvements needed<br>- Plan Phase 2 work<br>- Address critical bugs |
-| **Hour 12-24** | Core Improvements | - Fix bugs and stability issues<br>- Enhance cost-effectiveness<br>- Improve integration<br>- **Mentorship Checkpoint** |
-| **Hour 24-36** | Feature Enhancement | - Add missing features<br>- Improve UX/UI<br>- Optimize performance<br>- **Mentorship Checkpoint** |
-| **Hour 36-46** | Polish & Documentation | - Final testing<br>- Update documentation<br>- Improve demo video<br>- Refine presentation |
-| **Hour 46-48** | Final Submission | - Complete all improvements<br>- **Submit before 10:00 PM deadline** |
+| **Hour 0-12** | Assessment & Planning | - Review Phase 1 feedback (if provided)<br/>- Identify improvements needed<br/>- Plan Phase 2 work<br/>- Address critical bugs |
+| **Hour 12-24** | Core Improvements | - Fix bugs and stability issues<br/>- Enhance cost-effectiveness<br/>- Improve integration<br/>- **Mentorship Checkpoint** |
+| **Hour 24-36** | Feature Enhancement | - Add missing features<br/>- Improve UX/UI<br/>- Optimize performance<br/>- **Mentorship Checkpoint** |
+| **Hour 36-46** | Polish & Documentation | - Final testing<br/>- Update documentation<br/>- Improve demo video<br/>- Refine presentation |
+| **Hour 46-48** | Final Submission | - Complete all improvements<br/>- **Submit before 10:00 PM deadline** |
 
 ---
 
@@ -342,8 +339,6 @@ All solutions must be viable for **large-scale deployment in India**:
 
 ---
 
-
-
 ## Intellectual Property & Usage Rights
 
 ### Your Intellectual Property
@@ -386,8 +381,6 @@ By participating, you authorize annam.ai to:
 
 ---
 
-
-
 ## Resources & Support
 
 ### External APIs & Services
@@ -407,7 +400,6 @@ By participating, you authorize annam.ai to:
 - Vercel/Netlify (free hosting)
 - MongoDB Atlas (free tier)
 - Heroku (if needed)
-
 
 ---
 
@@ -485,7 +477,7 @@ By participating, you authorize annam.ai to:
 **Role:** Technical Support & Team Coordination  
 **Email:** deepthi@annam.ai
 
-**Vastal Khanna**  
+**Vatsal Khanna**  
 **Role:** Technical Support & Team Coordination  
 **Email:** vatsalkhanna5@gmail.com
 
@@ -501,11 +493,12 @@ By participating, you authorize annam.ai to:
 **Role:** Technical Support & Team Coordination  
 **Email:** davinder1436@gmail.com
 
-
 ### Quick Contact Guide
 
 **For General Queries:**  
 Email any of the organizers
+
+---
 
 ## Important Dates & Links
 
