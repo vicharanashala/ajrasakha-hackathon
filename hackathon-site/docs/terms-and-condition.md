@@ -1,5 +1,7 @@
 ---
 slug: /terms-and-condition
+title: Eligibility & Registration
+sidebar_label: Terms & Conditions
 ---
 ## Eligibility & Registration
 

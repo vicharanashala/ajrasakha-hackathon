@@ -1,6 +1,8 @@
+---
+title: Evaluation Criteria
+sidebar_label: Evaluation Criteria
+---
 
-
-## Evaluation Criteria
 
 ### Phase 1 + Phase 2 Combined Evaluation
 
