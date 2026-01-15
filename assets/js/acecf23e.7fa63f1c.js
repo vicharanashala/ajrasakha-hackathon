@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhackathon_site=globalThis.webpackChunkhackathon_site||[]).push([[1903],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/ajrasakha-hackathon/blog","blogTitle":"Blog","authorsListPath":"/ajrasakha-hackathon/blog/authors"}')}}]);

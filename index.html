@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">My Site</title><meta data-rh="true" property="og:title" content="My Site"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vicharanashala.github.io/ajrasakha-hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vicharanashala.github.io/ajrasakha-hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vicharanashala.github.io/ajrasakha-hackathon/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><link data-rh="true" rel="icon" href="/ajrasakha-hackathon/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vicharanashala.github.io/ajrasakha-hackathon/"><link data-rh="true" rel="alternate" href="https://vicharanashala.github.io/ajrasakha-hackathon/" hreflang="en"><link data-rh="true" rel="alternate" href="https://vicharanashala.github.io/ajrasakha-hackathon/" hreflang="x-default"><script data-rh="true">function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container";n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/ajrasakha-hackathon/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,o="/"===s.substr(-1)?s:s+"/";e.innerHTML=o}document.addEventListener("DOMContentLoaded",function(){void 0===window.docusaurus&&insertBanner()})</script><link rel="alternate" type="application/rss+xml" href="/ajrasakha-hackathon/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/ajrasakha-hackathon/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/ajrasakha-hackathon/assets/css/styles.64947ad8.css">
+<script src="/ajrasakha-hackathon/assets/js/runtime~main.e9a347ca.js" defer="defer"></script>
+<script src="/ajrasakha-hackathon/assets/js/main.047c6f74.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="https://storage.googleapis.com/annam-temp-images/logo-icon.png"><link rel="preload" as="image" href="/img/Gemini_Generated_Image_mor86gmor86gmor8.png"><div class="cipher-container"><nav class="navbar cipher-navbar"><style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        .cipher-navbar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 14px 8%;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          background: var(--glass-bg);
+          border-bottom: 1px solid var(--glass-border);
+          font-family: 'Outfit', sans-serif;
+        }
+
+        /* Logo */
+        .cipher-logo-container {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          transition: transform 0.25s ease;
+        }
+
+        .cipher-logo-container:hover {
+          transform: scale(1.05);
+        }
+
+        .navbar-logo-img {
+          height: 42px;
+          object-fit: contain;
+        }
+
+        /* Menu */
+        .navbar-menu {
+          display: flex;
+          gap: 48px;
+        }
+
+        .nav-link {
+          color: var(--text-muted);
+          font-weight: 600;
+          font-size: 0.95rem;
+          text-decoration: none;
+          position: relative;
+          padding: 6px 0;
+          transition: color 0.25s ease;
+        }
+
+        .nav-link:hover {
+          color: var(--text-strong);
+        }
+
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 0;
+          background: var(--brand-primary);
+          transition: width 0.25s ease;
+        }
+
+        .nav-link:hover::after {
+          width: 100%;
+        }
+
+        /* Right Side */
+        .navbar-right {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+
+        /* CTA Button */
+        .navbar-btn {
+          padding: 10px 22px;
+          border-radius: 10px;
+          background: transparent;
+          color: var(--brand-primary);
+          border: 1px solid var(--brand-primary);
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.25s ease;
+        }
+
+        .navbar-btn:hover {
+          background: var(--brand-primary);
+          color: var(--text-inverse);
+          box-shadow: 0 0 20px color-mix(in oklab, var(--brand-primary) 40%, transparent);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+          width: 36px;
+          height: 36px;
+          border-radius: 10px;
+          border: 1px solid var(--border-subtle);
+          background: var(--surface-2);
+          color: var(--text-strong);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.25s ease;
+        }
+
+        .theme-toggle:hover {
+          background: var(--surface-3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .navbar-menu {
+            display: none;
+          }
+        }
+      </style><a class="cipher-logo-container" href="/ajrasakha-hackathon/"><img src="https://storage.googleapis.com/annam-temp-images/logo-icon.png" alt="AjraSakha" class="navbar-logo-img"></a><div class="navbar-menu"><a class="nav-link" href="/ajrasakha-hackathon/docs/intro">About</a><a class="nav-link" href="/ajrasakha-hackathon/docs/category/problem-statements">Problems</a><a class="nav-link" href="/ajrasakha-hackathon/docs/guidelines">Guidelines</a><a class="nav-link" href="/ajrasakha-hackathon/docs/terms-and-condition">Terms &amp; conditions</a></div><div class="navbar-right"><a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"><button class="navbar-btn">Get Started</button></a><script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script></div></nav><div class="cipher-container"><style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        :root {
+          --background: oklch(0.9911 0 0);
+          --foreground: oklch(0.2046 0 0);
+          --card: oklch(0.9911 0 0);
+          --card-foreground: oklch(0.2046 0 0);
+          --popover: oklch(0.9911 0 0);
+          --popover-foreground: oklch(0.4386 0 0);
+          --primary: oklch(0.8348 0.1302 160.908);
+          --primary-foreground: oklch(0.2626 0.0147 166.4589);
+          --secondary: oklch(0.994 0 0);
+          --secondary-foreground: oklch(0.2046 0 0);
+          --muted: oklch(0.9461 0 0);
+          --muted-foreground: oklch(0.2435 0 0);
+          --accent: oklch(0.9461 0 0);
+          --accent-foreground: oklch(0.2435 0 0);
+          --border: oklch(0.9037 0 0);
+          --input: oklch(0.9731 0 0);
+          --ring: oklch(0.8348 0.1302 160.908);
+          --font-sans: 'Outfit', sans-serif;
+          --radius: 1.5rem;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .cipher-container {
+          min-height: 100vh;
+          background-color: var(--background);
+          color: var(--foreground);
+          font-family: var(--font-sans);
+          overflow: hidden;
+          position: relative;
+        }
+
+        /* Ambient Background Glows */
+        .ambient-glow {
+          position: absolute;
+          width: 60vw;
+          height: 60vw;
+          border-radius: 50%;
+          filter: blur(140px);
+          z-index: 0;
+          pointer-events: none;
+          opacity: 0.4;
+          animation: pulseGlow 10s ease-in-out infinite alternate;
+        }
+        .glow-1 { top: -20%; left: -10%; background: var(--primary); }
+        .glow-2 { bottom: -10%; right: -10%; background: oklch(0.9 0.05 190); }
+
+        @keyframes pulseGlow {
+          from { transform: scale(1); opacity: 0.3; }
+          to { transform: scale(1.15); opacity: 0.5; }
+        }
+
+        .grid-overlay {
+          position: absolute;
+          inset: 0;
+          background: 
+            linear-gradient(var(--border) 1px, transparent 1px),
+            linear-gradient(90deg, var(--border) 1px, transparent 1px);
+          background-size: 50px 50px;
+          mask-image: radial-gradient(ellipse at center, black, transparent 90%);
+          z-index: 1;
+          opacity: 0.4;
+          pointer-events: none;
+        }
+
+        .cipher-main {
+          position: relative;
+          z-index: 10;
+          padding: 80px 8%;
+          max-width: 1440px;
+          margin: 0 auto;
+        }
+
+        .cipher-content {
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 60px;
+          align-items: center;
+          min-height: 70vh;
+        }
+
+        .cipher-byline {
+          font-size: 0.85rem;
+          color: var(--primary-foreground);
+          text-transform: uppercase;
+          letter-spacing: 0.4em;
+          font-weight: 700;
+          margin-bottom: 15px;
+          display: inline-block;
+          background: var(--primary);
+          padding: 4px 12px;
+          border-radius: 4px;
+        }
+
+        .cipher-main-heading {
+          font-size: clamp(3rem, 7vw, 4.5rem);
+          font-weight: 900;
+          line-height: 1.1;
+          letter-spacing: -2px;
+          color: var(--foreground);
+          margin-bottom: 10px;
+        }
+
+        .cipher-sub-heading {
+          font-size: clamp(2rem, 5vw, 3.5rem);
+          font-weight: 900;
+          color: var(--primary);
+          margin-bottom: 24px;
+          letter-spacing: -1px;
+        }
+
+        .cipher-description {
+          font-size: 1.2rem;
+          color: var(--muted-foreground);
+          margin-bottom: 40px;
+          max-width: 540px;
+          line-height: 1.6;
+        }
+
+        .cipher-buttons {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+        }
+
+        .btn-register {
+          padding: 16px 36px;
+          background: var(--primary);
+          color: var(--primary-foreground);
+          border: none;
+          border-radius: 12px;
+          font-weight: 700;
+          font-size: 1.05rem;
+          cursor: pointer;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 10px 25px -5px oklch(0.83 0.13 160 / 0.4);
+        }
+
+        .btn-register:hover {
+          transform: translateY(-3px);
+          filter: brightness(0.95);
+          box-shadow: 0 15px 30px -5px oklch(0.83 0.13 160 / 0.5);
+        }
+
+        .btn-problem {
+          padding: 16px 36px;
+          color: var(--foreground);
+          background: var(--secondary);
+          border: 1px solid var(--border);
+          border-radius: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .btn-problem:hover {
+          background: var(--muted);
+          border-color: var(--primary);
+        }
+
+        /* --- STYLED IMAGE SECTION --- */
+        .cipher-right {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .cipher-illustration-container {
+          position: relative;
+          width: 100%;
+          max-width: 520px;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image-frame {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          border-radius: var(--radius);
+          padding: 12px;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(10px);
+          border: 1px solid var(--border);
+          box-shadow: 
+            0 25px 50px -12px rgba(0, 0, 0, 0.1),
+            inset 0 0 20px rgba(255, 255, 255, 0.5);
+          overflow: hidden;
+          z-index: 2;
+          animation: floatHero 6s ease-in-out infinite;
+        }
+
+        .cipher-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: calc(var(--radius) - 8px);
+          display: block;
+          transition: transform 0.5s ease;
+        }
+
+        .image-frame:hover .cipher-image {
+          transform: scale(1.05);
+        }
+
+        /* Decorative "Scanner" line effect */
+        .image-frame::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, var(--primary), transparent);
+          animation: scannerLine 4s linear infinite;
+          opacity: 0.5;
+          z-index: 3;
+        }
+
+        @keyframes scannerLine {
+          0% { top: 0%; }
+          100% { top: 100%; }
+        }
+
+        .orbital {
+          position: absolute;
+          border: 1px solid var(--border);
+          border-radius: 50%;
+          top: 50%; left: 50%;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+        }
+        .orbit-1 { width: 115%; height: 115%; border-color: var(--primary); opacity: 0.3; animation: rotateCW 30s linear infinite; }
+        .orbit-2 { width: 140%; height: 140%; border-style: dashed; opacity: 0.2; animation: rotateCCW 45s linear infinite; }
+
+        @keyframes rotateCW { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+        @keyframes rotateCCW { from { transform: translate(-50%, -50%) rotate(360deg); } to { transform: translate(-50%, -50%) rotate(0deg); } }
+
+        .floating-node {
+          position: absolute;
+          padding: 8px 16px;
+          background: var(--background);
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: var(--foreground);
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .floating-node::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--primary);
+        }
+
+        .node-1 { top: 5%; right: -2%; animation: floatNode 4s ease-in-out infinite; }
+        .node-2 { bottom: 10%; left: -5%; animation: floatNode 4s ease-in-out infinite 1s; }
+
+        @keyframes floatHero {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+        }
+
+        @keyframes floatNode {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 1024px) {
+          .cipher-content { grid-template-columns: 1fr; text-align: center; gap: 80px; }
+          .cipher-description { margin: 0 auto 40px; }
+          .cipher-buttons { justify-content: center; }
+          .cipher-illustration-container { max-width: 400px; margin: 0 auto; }
+        }
+      </style><div class="ambient-glow glow-1"></div><div class="ambient-glow glow-2"></div><div class="grid-overlay"></div><main class="cipher-main"><div class="cipher-content"><div class="cipher-left"><div class="cipher-logo-section"><span class="cipher-byline">AjraSakha hackathon</span></div><div class="cipher-heading-section"><h1 class="cipher-main-heading">Architecting the</h1><h2 class="cipher-sub-heading">Future of Innovation</h2></div><p class="cipher-description">India&#x27;s premier 48-hour development marathon is here. Build groundbreaking solutions, learn from industry architects, and compete for a significant reward pool.</p><div class="cipher-buttons"><a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"><button class="btn-register">Register</button></a></div></div><div class="cipher-right"><div class="cipher-illustration-container"><div class="orbital orbit-1"></div><div class="orbital orbit-2"></div><div class="floating-node node-1">SYSTEM: ACTIVE</div><div class="floating-node node-2">ANNAM.AI</div><div class="image-frame"><img src="/img/Gemini_Generated_Image_mor86gmor86gmor8.png" alt="Innovation Illustration" class="cipher-image"></div></div></div></div></main></div><section class="hackathon-schedule"><style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        :root {
+          --background: oklch(0.9911 0 0);
+          --foreground: oklch(0.2046 0 0);
+          --primary: oklch(0.8348 0.1302 160.908);
+          --primary-foreground: oklch(0.2626 0.0147 166.4589);
+          --border: oklch(0.9037 0 0);
+          --muted-foreground: oklch(0.2435 0 0);
+          --glass-bg: rgba(255, 255, 255, 0.6);
+          --glass-border: oklch(0.9037 0 0);
+          --font-sans: 'Outfit', sans-serif;
+        }
+
+        .hackathon-schedule {
+          position: relative;
+          background-color: var(--background);
+          color: var(--foreground);
+          padding: 100px 20px;
+          overflow: hidden;
+          min-height: 100vh;
+          font-family: var(--font-sans);
+        }
+
+        /* Ambient Background Glows - Mint Themed */
+        .ambient-glow {
+          position: absolute;
+          width: 50vw;
+          height: 50vw;
+          border-radius: 50%;
+          filter: blur(120px);
+          z-index: 0;
+          pointer-events: none;
+          opacity: 0.3;
+        }
+        .glow-1 { top: -10%; left: -10%; background: var(--primary); }
+        .glow-2 { bottom: -10%; right: -10%; background: oklch(0.9 0.05 190); }
+
+        /* Decorative Floating Elements (Mint Outline) */
+        .schedule-decoration {
+          position: absolute;
+          opacity: 0.3;
+          z-index: 1;
+          pointer-events: none;
+          animation: float 6s ease-in-out infinite;
+        }
+
+        .schedule-triangle {
+          width: 0; height: 0;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-bottom: 50px solid var(--primary);
+          top: 15%; left: 10%;
+        }
+
+        .schedule-square-1 {
+          width: 40px; height: 40px;
+          border: 2px solid var(--primary);
+          bottom: 15%; left: 8%;
+          transform: rotate(15deg);
+        }
+
+        .schedule-square-2 {
+          width: 30px; height: 30px;
+          border: 2px solid oklch(0.6 0.1 200);
+          top: 25%; right: 10%;
+          transform: rotate(-20deg);
+        }
+
+        .schedule-circle {
+          width: 25px; height: 25px;
+          border: 2px solid var(--primary);
+          border-radius: 50%;
+          bottom: 20%; right: 12%;
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0) rotate(0); }
+          50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .schedule-container {
+          max-width: 1000px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 2;
+        }
+
+        /* Header */
+        .schedule-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .schedule-title {
+          font-size: clamp(2.5rem, 8vw, 4rem);
+          font-weight: 900;
+          margin-bottom: 20px;
+          letter-spacing: -2px;
+          color: var(--foreground);
+        }
+
+        .schedule-highlight {
+          color: var(--primary);
+          position: relative;
+        }
+
+        .schedule-subtitle {
+          font-size: 1.1rem;
+          color: var(--muted-foreground);
+          max-width: 600px;
+          margin: 0 auto;
+          line-height: 1.6;
+        }
+
+        /* Date Section */
+        .schedule-date {
+          text-align: center;
+          margin: 40px 0;
+        }
+
+        .schedule-date h3 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: var(--foreground);
+          background: oklch(0.96 0.01 160);
+          padding: 8px 32px;
+          border-radius: 100px;
+          display: inline-block;
+          border: 1px solid var(--border);
+        }
+
+        /* Tab Buttons */
+        .schedule-tabs {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          margin-bottom: 60px;
+          padding: 6px;
+          background: oklch(0.97 0 0);
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 20px;
+          border: 1px solid var(--border);
+        }
+
+        .schedule-tab {
+          padding: 12px 32px;
+          border: none;
+          border-radius: 14px;
+          font-size: 0.95rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          background-color: transparent;
+          color: var(--muted-foreground);
+        }
+
+        .schedule-tab.active {
+          background-color: var(--primary);
+          color: var(--primary-foreground);
+          box-shadow: 0 4px 20px oklch(0.83 0.13 160 / 0.3);
+        }
+
+        .schedule-tab:hover:not(.active) {
+          color: var(--foreground);
+          background-color: oklch(0.94 0 0);
+        }
+
+        /* Schedule Items */
+        .schedule-items {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .schedule-item {
+          display: flex;
+          gap: 40px;
+          background: var(--glass-bg);
+          backdrop-filter: blur(16px);
+          padding: 40px;
+          border-radius: 28px;
+          border: 1px solid var(--border);
+          transition: all 0.4s ease;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+        }
+
+        .schedule-item::before {
+          content: '';
+          position: absolute;
+          left: 0; top: 0; bottom: 0;
+          width: 6px;
+          background: var(--primary);
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        .schedule-item:hover {
+          background: white;
+          border-color: var(--primary);
+          transform: translateX(12px);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+        }
+
+        .schedule-item:hover::before {
+          opacity: 1;
+        }
+
+        .schedule-time {
+          min-width: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+
+        .schedule-time span {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: var(--foreground);
+          letter-spacing: -0.5px;
+          border-left: 4px solid var(--primary);
+          padding-left: 20px;
+        }
+
+        .schedule-content {
+          flex: 1;
+        }
+
+        .schedule-phase {
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: var(--foreground);
+          margin: 0 0 10px 0;
+        }
+
+        .schedule-description {
+          font-size: 1rem;
+          color: var(--muted-foreground);
+          margin: 0;
+          line-height: 1.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .schedule-item {
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+          }
+          .schedule-time {
+            min-width: auto;
+          }
+          .schedule-time span {
+            border-left: none;
+            border-bottom: 3px solid var(--primary);
+            padding-left: 0;
+            padding-bottom: 8px;
+            display: inline-block;
+          }
+          .schedule-title { font-size: 2.5rem; }
+        }
+      </style><div class="ambient-glow glow-1"></div><div class="ambient-glow glow-2"></div><div class="schedule-decoration schedule-triangle"></div><div class="schedule-decoration schedule-square-1"></div><div class="schedule-decoration schedule-square-2"></div><div class="schedule-decoration schedule-circle"></div><div class="schedule-container"><header class="schedule-header"><h2 class="schedule-title">Hackathon <span class="schedule-highlight">Schedule</span></h2><p class="schedule-subtitle">The architect&#x27;s roadmap to success. Mark your progress as we build the future together over the next 48 hours.</p></header><div class="schedule-date"><h3>Friday, 16 January 2026</h3></div><div class="schedule-tabs"><button class="schedule-tab active">Phase 1</button><button class="schedule-tab">Phase 2</button></div><div class="schedule-items"><div class="schedule-item"><div class="schedule-time"><span>Day 1</span></div><div class="schedule-content"><h4 class="schedule-phase">Phase - I: Opening</h4><p class="schedule-description">Official kickoff event. Join us for the opening ceremony and team formation sessions.</p></div></div><div class="schedule-item"><div class="schedule-time"><span>Day 2</span></div><div class="schedule-content"><h4 class="schedule-phase">Phase - II: Mentoring</h4><p class="schedule-description">Exclusive sessions with industry experts to refine your project architecture and strategy.</p></div></div></div></div></section><footer class="cipher-footer"><style>
+        .cipher-footer {
+          width: 100%;
+          padding: 36px 8% 24px;
+          background: var(--glass-bg);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-top: 1px solid var(--glass-border);
+          box-shadow: var(--shadow-soft);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          font-family: 'Outfit', sans-serif;
+        }
+
+        /* Contact Row */
+        .footer-contact {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
+        }
+
+        .contact-item {
+          color: var(--text-muted);
+          font-size: 0.9rem;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          transition: all 0.25s ease;
+        }
+
+        .contact-item:hover {
+          color: var(--text-strong);
+          transform: translateY(-2px);
+        }
+
+        .contact-icon {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--surface-2);
+          border: 1px solid var(--border-subtle);
+          color: var(--brand-primary);
+          font-size: 1.1rem;
+        }
+
+        /* Divider */
+        .footer-divider {
+          width: 48px;
+          height: 2px;
+          background: var(--brand-primary);
+          opacity: 0.3;
+          border-radius: 2px;
+        }
+
+        /* Credits */
+        .footer-credits {
+          font-size: 0.85rem;
+          color: var(--text-muted);
+          text-align: center;
+          letter-spacing: 0.02em;
+          font-weight: 500;
+        }
+
+        .credits-brand {
+          color: var(--brand-primary);
+          font-weight: 800;
+          text-shadow: 0 0 15px color-mix(in oklab, var(--brand-primary) 40%, transparent);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .footer-contact {
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+          }
+
+          .cipher-footer {
+            padding: 28px 20px 20px;
+          }
+        }
+      </style><div class="footer-credits">© 2026 All rights reserved.<!-- --> <span class="credits-brand">Annam.Ai</span></div></footer></div></div>
+</body>
+</html>

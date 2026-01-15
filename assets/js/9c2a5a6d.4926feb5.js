@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhackathon_site=globalThis.webpackChunkhackathon_site||[]).push([[172],{9987(a){a.exports=JSON.parse('{"metadata":{"permalink":"/ajrasakha-hackathon/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
