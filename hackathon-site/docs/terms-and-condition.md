@@ -3,211 +3,181 @@ slug: /terms-and-condition
 title: Eligibility & Registration
 sidebar_label: Terms & Conditions
 ---
-## Eligibility & Registration
+# Terms & Conditions
+## Ajrasakha Hackathon 
 
-### Who Can Participate
-- ✅ **Exclusive to current Winternship cohort members**
-- ✅ **Teams of exactly 4 members** (no solo participation, no teams with fewer or more than 4 members)
-- ✅ **One team per person** (cannot register for multiple teams)
-- ✅ **Voluntary participation** (strongly encouraged)
+The **annam.ai Ajrasakha Hackathon** is a two-phase event conducted over two consecutive weekends.
 
-### Prohibited Participants
-- ❌ Outsiders or external participants
-- ❌ Individuals not part of the current internship cohort
-- ❌ Solo participants or incomplete teams
+- **Phase 1:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM (48 hours)
+- **Phase 2:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
 
-### Team Composition Guidelines
-Teams are **strongly encouraged** to be heterogeneous with diverse skill sets:
-- **Developer** (Frontend/Backend/Full-stack)
-- **Creative Thinker** (Innovation/Problem-solving)
-- **Operations Executor** (Project management/Testing)
-- **Documentation/Research/AI Specialist** (Technical writing/AI tools)
+Together, these constitute the **"Hackathon Period."**
 
-⚠️ **Teams with identical skill sets are discouraged**
-
-### Registration Requirements
-- Complete team formation by the specified deadline
-- All 4 members must be confirmed
-- Review the Ajrasakha repository when released
-- Maintain active internship status (complete case studies, endorsements)
+This Hackathon is governed by these **Terms and Conditions ("Terms")**, which form a binding agreement between you (the **participant**) and **annam.ai**, including its affiliates (the **"Organization"**). By participating, you acknowledge that you have read, understood, and agreed to be bound by these Terms.
 
 ---
 
-### Project Options
+## Eligibility
 
-Teams may choose **ONE** of the following approaches:
+- The Hackathon is an **internal event** restricted exclusively to members of the current internship (**Winternship**) cohort.  
+- Participation is **voluntary but strongly encouraged**.  
+- **Outsiders, external participants, and non-interns are strictly prohibited**.
 
-#### Option 1: Feature Requests (Provided by Organizers)
-Work on pre-defined feature requests that address specific needs in the Ajrasakha system. These will be shared after registration.
+### Team Rules
+- Each participant must register as part of a team of **exactly four (4) members**.  
+- **Solo participation** or teams with fewer or more than four members are **not permitted**.  
+- A participant may be part of **only one team**.
 
-#### Option 2: Propose Your Own Feature
-Teams can propose and implement their own innovative features that align with Ajrasakha's mission.
+Teams are encouraged to be **heterogeneous**, including members with diverse skills such as:
+- Development
+- Creative thinking
+- Operations execution
+- Documentation, research, or AI tooling
 
-**Examples of potential features:**
-- Voice-enabled interface with multilingual support
-- Agricultural knowledge repository and Q&A system
-- Market intelligence and real-time mandi price information
-- Government scheme eligibility checker with document parsing
-- Soil health digitization and recommendation engine
-- Predictive analytics for crop diseases or market trends
-- Community forum with expert verification
-- Offline-capable mobile-first design for rural areas
+Teams composed entirely of members with identical skill sets are discouraged.
 
----
-
-## Focus Areas & Requirements
-
-### Technical Requirements
-
-#### Mandatory Integration
-- ✅ **Must integrate with existing Ajrasakha MERN stack**
-- ✅ **Must be deployable within the existing system architecture**
-- ✅ **Cannot be a standalone application**
-- ⚠️ **Projects that cannot integrate will be considered failures**
-
-#### Technology Stack
-**Core (Required):**
-- MongoDB, Express.js, React, Node.js
-
-**Additional (Allowed):**
-- Python for AI/ML components
-- AI models (OpenAI, HuggingFace, custom models)
-- Additional frameworks/libraries that integrate cleanly
-
-**You may use:**
-- Progressive Web Apps (PWA) for offline capabilities
-- Lightweight frameworks for low-end devices
-- Image compression and lazy loading
-- Text-to-speech and speech-to-text APIs
-- Translation APIs (Google Translate, IndicTrans2)
-- OCR services (Tesseract, Google Cloud Vision)
-- Vector databases (Pinecone, MongoDB Atlas)
-- Maps APIs (Google Maps, Mapbox)
-
-### Cost-Effectiveness Criteria ⚠️ **CRITICAL**
-
-**This is a PRIMARY evaluation criterion**
-
-All solutions must be viable for **large-scale deployment in India**:
-
-✅ **Do:**
-- Minimize GPU usage and API costs
-- Use cost-effective alternatives (open-source models, cached data)
-- Prioritize expert-validated datasets over LLM calls
-- Design for cheaper operation than human-operated systems
-- Request GPU access from organizers (provided selectively based on merit)
-- Bring your own datasets or request from organizers
-
-❌ **Don't:**
-- Use expensive API calls without justification
-- Rely heavily on paid LLM services (GPT-4, Claude) without caching
-- Design solutions requiring continuous GPU compute
-- Ignore cost implications of your architecture
-
-**Cost justification will be evaluated in both phases**
-
-### Farmer-Centric Design Requirements
-
-#### Accessibility
-- Mobile-first design (most farmers use smartphones)
-- Works on 2G/3G networks with low bandwidth
-- Optimized for basic Android devices
-- Large text, clear buttons, intuitive navigation
-- At least **one regional language** support (Hindi, Tamil, Telugu, etc.)
-
-#### User Experience
-- Simple interface for users with limited digital literacy
-- Voice input/output capabilities (highly encouraged)
-- Offline functionality where applicable
-- Visual aids (icons, illustrations, infographics)
-- Fast load times (under 3 seconds on 3G)
-
-#### Content Quality
-- Practical, actionable farming advice
-- Expert-validated information
-- Localized content for Indian agriculture
-- Region-specific recommendations
+annam.ai reserves the right to **disqualify any entry** if it determines that a participant has violated these Terms, tampered with the Hackathon, or acted against the spirit of the event.
 
 ---
 
-## Code of Conduct & Prohibited Content
+## Hackathon Structure
 
-### Required Conduct
-- ✅ **Respect and professionalism** at all times
-- ✅ **Original work** or properly attributed third-party code
-- ✅ **Team collaboration** within your team
-- ✅ **Ethical AI usage** (no bias, harm, or misinformation)
-- ✅ **Cultural sensitivity** toward farming communities
+The Hackathon consists of two phases:
 
-### Strictly Prohibited ❌
+### Phase 1
+- Teams must build a **complete, working product** within **48 hours**.  
+- Partial prototypes are discouraged unless a **clear split of deliverables** between Phase 1 and Phase 2 is documented.  
+- At the end of Phase 1, teams must submit:
+  - Source code
+  - Application
+  - A short video explaining what was built, how it works, and why it matters
 
-**Submissions must NOT contain:**
+### Phase 2
+- Teams must **improve, refine, and strengthen** their Phase 1 product within another **48-hour window**.  
+- **All teams automatically proceed** to Phase 2. There is **no elimination** after Phase 1.
 
-1. **Illegal or Harmful Content:**
-   - Anything unlawful or violating laws
-   - Intellectual property violations
-   - Hateful, tortious, slanderous, or libelous content
-   - Content promoting bigotry, racism, sexism, hatred
-   - Discrimination based on race, sex, religion, nationality, disability, sexual orientation, or age
-
-2. **Inappropriate Content:**
-   - Personal information of third parties without authorization
-   - Nudity or sexually explicit content
-   - Lewd, offensive, or disparaging content
-   - Promotion of alcohol, illegal drugs, tobacco, firearms, weapons
-   - Unsafe or dangerous activities
-
-3. **Academic Dishonesty:**
-   - Plagiarism of any form
-   - Unauthorized use of third-party materials
-   - Copying code without attribution
-   - Claiming others' work as your own
-
-4. **Manipulation:**
-   - Tampering with the entry process
-   - Gaming the evaluation system
-   - Collusion between teams
-   - Misrepresenting capabilities
-
-**Consequences:**
-- Immediate disqualification
-- Forfeiture of prizes
-- Removal from hackathon
-- Potential impact on internship status
-
-annam.ai reserves the right to reject any submission deemed inappropriate, non-compliant, or for any reason, at sole discretion without explanation.
+Organizers may provide feedback after Phase 1, but feedback is **not guaranteed**.  
+Final evaluation will consider performance **across both phases together**.
 
 ---
 
-## Liability & Legal
+## Project Scope and Requirements
 
-### Limitation of Liability
+All projects must relate to the **Ajrasakha system**, a suite of open-source software.
 
-By entering the Hackathon, you agree to:
+Teams may:
+- Work on **feature requests** provided by the organizers, or  
+- **Propose and implement their own features**
 
-- **Release** annam.ai, its affiliates, parents, subsidiaries, employees, agents, and representatives from:
-  - Any and all liability, claims, or actions
-  - Injuries, damages, or losses to person or property
-  - Related to receipt, ownership, or use of prizes
-  - Related to participation in the Hackathon
+All solutions must **integrate cleanly** into the existing **Ajrasakha system**, which is built on:
+- **MongoDB**
+- **Express.js**
+- **React**
+- **Node.js**
+- AI-based technologies
 
-- **No claims:** You agree no claim shall be asserted against annam.ai entities
+Additional technologies (e.g., **Python**, AI models) may be used as long as the **final solution integrates with the MERN-based system**.
 
-- **Personal responsibility:** Any expenses during development and submission are your sole responsibility
-
-### General Conditions
-
-- **Modification rights:** annam.ai may cancel, terminate, modify, or suspend the Hackathon if it cannot be conducted as described
-
-- **Rule changes:** annam.ai reserves the right to change rules, including prize substitution, effective upon announcement
-
-- **Final decisions:** All decisions by annam.ai are final, absolute, and not subject to inquiry or appeal
-
-- **Governing law:** The Hackathon will be governed by the laws of India
-
-- **Disqualification:** annam.ai may disqualify any entry if:
-  - Tampering with entry process or hackathon operation
-  - Violation of Terms and Conditions
-  - Inappropriate conduct contrary to hackathon spirit
+> Projects that **cannot be integrated** into the Ajrasakha system will be **considered failures**, regardless of technical sophistication.
 
 ---
+
+## Technical and Cost Requirements
+
+Cost-effectiveness is a **primary evaluation criterion**, especially for large-scale deployment in India.
+
+Teams must:
+- Minimize **GPU usage** and **API costs**
+- Ensure solutions are **cheaper than equivalent human-operated systems**
+- Justify any **high-cost API usage**
+- Prioritize **expert-validated data** and **localized responses**
+- Prefer **curated datasets** over heavy LLM reliance
+
+GPU access will be provided **selectively** based on merit after Phase 1.
+
+---
+
+## Submission Requirements
+
+At the end of Phase 1 and Phase 2, teams must submit:
+
+- Complete **source code**
+- A **working, deployable application**
+- A **short demo video**
+- **Documentation** of integration with Ajrasakha
+- Any additional materials requested by organizers
+
+The project must be:
+- A **public GitHub repository**
+- Licensed under the **MIT License**
+- Remain public after the competition
+
+---
+
+## Evaluation Criteria
+
+Projects will be evaluated on:
+
+- Integration with Ajrasakha
+- Cost-effectiveness and scalability
+- Technical quality across both phases
+- Innovation and impact
+- Completeness and functionality
+- Efficient use of compute, APIs, and GPUs
+
+Small, focused, high-impact solutions are encouraged.
+
+All decisions by **annam.ai are final and binding**.
+
+---
+
+
+## Intellectual Property & Usage Rights
+
+By participating, you grant annam.ai the right to:
+- Publish screenshots, code snippets, and descriptions
+- Use submissions for promotion, education, or demos
+- Use participant names and testimonials
+
+---
+
+## Conduct and Prohibited Content
+
+Submissions must not:
+- Violate any law or IP rights
+- Contain hateful, harmful, or discriminatory content
+- Include personal data without consent
+- Promote unsafe or illegal activities
+- Contain explicit or offensive material
+- Include plagiarism or unauthorized content
+
+annam.ai may reject any submission at its discretion.
+
+---
+
+## Limitation of Liability
+
+Participants agree that annam.ai is not liable for any injury, damage, or loss related to the Hackathon or prizes.
+
+All participant expenses are their own responsibility.
+
+---
+
+## General Conditions
+
+annam.ai may cancel, modify, or suspend the Hackathon at any time.  
+All decisions are final and governed by the **laws of India**.
+
+---
+
+## Mandatory Actions
+
+All participants must:
+
+- Complete team registration on time
+- Review the Ajrasakha repository
+- Execute Phase 1 and Phase 2 work
+- Complete all internship obligations
+- Maintain communication with organizers
+
+By participating, you confirm acceptance of these **Terms and Conditions**.
