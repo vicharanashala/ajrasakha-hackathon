@@ -164,8 +164,10 @@ export default function CipherNavbar() {
           {theme === "dark" ? "☀️" : "🌙"}
         </button> */}
 
-        <a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1">
-          <button className="navbar-btn">Get Started</button>
+        <a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1" target="_blank"
+  rel="noopener noreferrer">
+        
+          <button className="navbar-btn">Register</button>
         </a>
         {/* <a
   href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"
