@@ -1,10 +1,8 @@
-
-
 ## Eligibility & Registration
 
 ### Who Can Participate
 - ✅ **Exclusive to current Winternship cohort members**
-- ✅ **Teams of exactly 4 members** (no solo participation, no teams with <4 or >4 members)
+- ✅ **Teams of exactly 4 members** (no solo participation, no teams with fewer or more than 4 members)
 - ✅ **One team per person** (cannot register for multiple teams)
 - ✅ **Voluntary participation** (strongly encouraged)
 
@@ -29,7 +27,6 @@ Teams are **strongly encouraged** to be heterogeneous with diverse skill sets:
 - Maintain active internship status (complete case studies, endorsements)
 
 ---
-
 
 ### Project Options
 
@@ -118,7 +115,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Voice input/output capabilities (highly encouraged)
 - Offline functionality where applicable
 - Visual aids (icons, illustrations, infographics)
-- Fast load times (<3 seconds on 3G)
+- Fast load times (under 3 seconds on 3G)
 
 #### Content Quality
 - Practical, actionable farming advice
@@ -127,11 +124,6 @@ All solutions must be viable for **large-scale deployment in India**:
 - Region-specific recommendations
 
 ---
-
-
-
-
-
 
 ## Code of Conduct & Prohibited Content
 
@@ -180,8 +172,6 @@ All solutions must be viable for **large-scale deployment in India**:
 
 annam.ai reserves the right to reject any submission deemed inappropriate, non-compliant, or for any reason, at sole discretion without explanation.
 
-
-
 ---
 
 ## Liability & Legal
@@ -215,4 +205,4 @@ By entering the Hackathon, you agree to:
   - Violation of Terms and Conditions
   - Inappropriate conduct contrary to hackathon spirit
 
-
+---
