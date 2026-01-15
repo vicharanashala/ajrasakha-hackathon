@@ -1,11 +1,11 @@
-# AJRASAKHA HACKATHON 2025
+# AJRASAKHA HACKATHON 
 ## 48-Hour Two-Phase Agricultural Technology Challenge
 
 ---
 
 ## Overview
 
-The **Ajrasakha Hackathon 2025** is a two-phase competitive event where teams of four will build innovative agricultural technology solutions that integrate with the **Ajrasakha system** - annam.ai's suite of open-source agricultural software. This hackathon focuses on creating practical, cost-effective, and scalable solutions for Indian farmers.
+The **Ajrasakha Hackathon ** is a two-phase competitive event where teams of four will build innovative agricultural technology solutions that integrate with the **Ajrasakha system** - annam.ai's suite of open-source agricultural software. This hackathon focuses on creating practical, cost-effective, and scalable solutions for Indian farmers.
 
 ### Event Structure
 - **Phase 1:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM (48 hours)
