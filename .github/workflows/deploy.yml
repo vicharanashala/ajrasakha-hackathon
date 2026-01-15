@@ -16,6 +16,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hackathon-site
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,8 +38,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
-
+          path: hackathon-site/build 
   deploy:
     environment:
       name: github-pages
