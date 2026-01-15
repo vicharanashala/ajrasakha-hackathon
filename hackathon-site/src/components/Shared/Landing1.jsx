@@ -1,3 +1,324 @@
+// export default function CipherThon() {
+//   return (
+//     <div className="cipher-container">
+//       <style>{`
+//         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+//         :root {
+//           --background: oklch(0.9911 0 0);
+//           --foreground: oklch(0.2046 0 0);
+//           --card: oklch(0.9911 0 0);
+//           --card-foreground: oklch(0.2046 0 0);
+//           --popover: oklch(0.9911 0 0);
+//           --popover-foreground: oklch(0.4386 0 0);
+//           --primary: oklch(0.8348 0.1302 160.908);
+//           --primary-foreground: oklch(0.2626 0.0147 166.4589);
+//           --secondary: oklch(0.994 0 0);
+//           --secondary-foreground: oklch(0.2046 0 0);
+//           --muted: oklch(0.9461 0 0);
+//           --muted-foreground: oklch(0.2435 0 0);
+//           --accent: oklch(0.9461 0 0);
+//           --accent-foreground: oklch(0.2435 0 0);
+//           --border: oklch(0.9037 0 0);
+//           --input: oklch(0.9731 0 0);
+//           --ring: oklch(0.8348 0.1302 160.908);
+//           --font-sans: 'Outfit', sans-serif;
+//           --radius: 0.75rem;
+//         }
+
+//         * {
+//           margin: 0;
+//           padding: 0;
+//           box-sizing: border-box;
+//         }
+
+//         .cipher-container {
+//           min-height: 100vh;
+//           background-color: var(--background);
+//           color: var(--foreground);
+//           font-family: var(--font-sans);
+//           overflow-x: hidden;
+//           position: relative;
+          
+//           /* Hides scrollbar for Chrome, Safari and Opera */
+//           &::-webkit-scrollbar {
+//             display: none;
+//           }
+//           /* Hides scrollbar for IE, Edge and Firefox */
+//           -ms-overflow-style: none;  /* IE and Edge */
+//           scrollbar-width: none;  /* Firefox */
+//         }
+
+//         /* Ambient Background Glows */
+//         .ambient-glow {
+//           position: absolute;
+//           width: 60vw;
+//           height: 60vw;
+//           border-radius: 50%;
+//           filter: blur(140px);
+//           z-index: 0;
+//           pointer-events: none;
+//           opacity: 0.4;
+//           animation: pulseGlow 10s ease-in-out infinite alternate;
+//         }
+//         .glow-1 { top: -20%; left: -10%; background: var(--primary); }
+//         .glow-2 { bottom: -10%; right: -10%; background: oklch(0.9 0.05 190); }
+
+//         @keyframes pulseGlow {
+//           from { transform: scale(1); opacity: 0.3; }
+//           to { transform: scale(1.15); opacity: 0.5; }
+//         }
+
+//         .grid-overlay {
+//           position: absolute;
+//           inset: 0;
+//           background: 
+//             linear-gradient(var(--border) 1px, transparent 1px),
+//             linear-gradient(90deg, var(--border) 1px, transparent 1px);
+//           background-size: 50px 50px;
+//           mask-image: radial-gradient(ellipse at center, black, transparent 90%);
+//           z-index: 1;
+//           opacity: 0.4;
+//           pointer-events: none;
+//         }
+
+//         .cipher-main {
+//           position: relative;
+//           z-index: 10;
+//           padding: 80px 8%;
+//           max-width: 1440px;
+//           margin: 0 auto;
+//         }
+
+//         .cipher-content {
+//           display: grid;
+//           grid-template-columns: 1.1fr 0.9fr;
+//           gap: 60px;
+//           align-items: center;
+//         }
+
+//         .cipher-byline {
+//           font-size: 0.85rem;
+//           color: var(--primary-foreground);
+//           text-transform: uppercase;
+//           letter-spacing: 0.4em;
+//           font-weight: 700;
+//           margin-bottom: 15px;
+//           display: inline-block;
+//           background: var(--primary);
+//           padding: 4px 12px;
+//           border-radius: 4px;
+//         }
+
+//         .cipher-main-heading {
+//           font-size: clamp(3rem, 7vw, 4.5rem);
+//           font-weight: 900;
+//           line-height: 1.1;
+//           letter-spacing: -2px;
+//           color: var(--foreground);
+//           margin-bottom: 10px;
+//         }
+
+//         .cipher-sub-heading {
+//           font-size: clamp(2rem, 5vw, 3.5rem);
+//           font-weight: 900;
+//           color: var(--primary);
+//           margin-bottom: 24px;
+//           letter-spacing: -1px;
+//         }
+
+//         .cipher-description {
+//           font-size: 1.2rem;
+//           color: var(--muted-foreground);
+//           margin-bottom: 40px;
+//           max-width: 540px;
+//           line-height: 1.6;
+//         }
+
+//         .cipher-buttons {
+//           display: flex;
+//           gap: 20px;
+//           align-items: center;
+//         }
+
+//         .btn-register {
+//           padding: 16px 36px;
+//           background: var(--primary);
+//           color: var(--primary-foreground);
+//           border: none;
+//           border-radius: var(--radius);
+//           font-weight: 700;
+//           font-size: 1.05rem;
+//           cursor: pointer;
+//           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+//           box-shadow: 0 10px 25px -5px oklch(0.83 0.13 160 / 0.4);
+//         }
+
+//         .btn-register:hover {
+//           transform: translateY(-3px);
+//           filter: brightness(0.95);
+//           box-shadow: 0 15px 30px -5px oklch(0.83 0.13 160 / 0.5);
+//         }
+
+//         .btn-problem {
+//           padding: 16px 36px;
+//           color: var(--foreground);
+//           background: var(--secondary);
+//           border: 1px solid var(--border);
+//           border-radius: var(--radius);
+//           font-weight: 600;
+//           cursor: pointer;
+//           transition: all 0.3s ease;
+//         }
+
+//         .btn-problem:hover {
+//           background: var(--muted);
+//           border-color: var(--primary);
+//         }
+
+//         .cipher-right {
+//           position: relative;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//         }
+
+//         .cipher-illustration-container {
+//           position: relative;
+//           width: 100%;
+//           max-width: 500px;
+//         }
+
+//         .orbital {
+//           position: absolute;
+//           border: 1px solid var(--border);
+//           border-radius: 50%;
+//           top: 50%; left: 50%;
+//           transform: translate(-50%, -50%);
+//           pointer-events: none;
+//         }
+//         .orbit-1 { width: 110%; height: 110%; animation: rotateCW 30s linear infinite; }
+//         .orbit-2 { width: 130%; height: 130%; border-style: dashed; animation: rotateCCW 40s linear infinite; }
+
+//         @keyframes rotateCW { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+//         @keyframes rotateCCW { from { transform: translate(-50%, -50%) rotate(360deg); } to { transform: translate(-50%, -50%) rotate(0deg); } }
+
+//         .cipher-svg {
+//           width: 100%;
+//           height: auto;
+//           filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+//           animation: floatHero 6s ease-in-out infinite;
+//           z-index: 2;
+//           position: relative;
+//         }
+
+//         @keyframes floatHero {
+//           0%, 100% { transform: translateY(0); }
+//           50% { transform: translateY(-20px); }
+//         }
+
+//         .floating-node {
+//           position: absolute;
+//           padding: 10px 18px;
+//           background: var(--background);
+//           border: 1px solid var(--border);
+//           border-radius: 12px;
+//           box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+//           font-size: 0.8rem;
+//           font-weight: 700;
+//           color: var(--primary-foreground);
+//           z-index: 5;
+//           animation: floatNode 4s ease-in-out infinite;
+//         }
+//         .node-1 { top: 10%; right: -5%; border-left: 4px solid var(--primary); }
+//         .node-2 { bottom: 15%; left: -10%; border-left: 4px solid #64748b; }
+
+//         @keyframes floatNode {
+//           0%, 100% { transform: translateY(0); }
+//           50% { transform: translateY(-12px); }
+//         }
+
+//         @media (max-width: 1024px) {
+//           .cipher-content { grid-template-columns: 1fr; text-align: center; gap: 60px; }
+//           .cipher-description { margin: 0 auto 40px; }
+//           .cipher-buttons { justify-content: center; }
+//         }
+//       `}</style>
+
+//       {/* Decorative Background */}
+//       <div className="ambient-glow glow-1"></div>
+//       <div className="ambient-glow glow-2"></div>
+//       <div className="grid-overlay"></div>
+
+//       <main className="cipher-main">
+//         <div className="cipher-content">
+//           <div className="cipher-left">
+//             <div className="cipher-logo-section">
+//               <span className="cipher-byline">AjraSakha hackathon</span>
+//             </div>
+
+//             <div className="cipher-heading-section">
+//               <h1 className="cipher-main-heading">Architecting the</h1>
+//               <h2 className="cipher-sub-heading">Future of Innovation</h2>
+//             </div>
+
+//             <p className="cipher-description">
+//               India's premier 48-hour development marathon is here. Build groundbreaking solutions, learn from industry architects, and compete for a significant reward pool.
+//             </p>
+
+//             <div className="cipher-buttons">
+//               <button className="btn-register">Start Your Journey</button>
+//               <button className="btn-problem">Explore Tracks</button>
+//             </div>
+//           </div>
+
+//           <div className="cipher-right">
+//             <div className="cipher-illustration-container">
+//               <div className="orbital orbit-1"></div>
+//               <div className="orbital orbit-2"></div>
+              
+//               <div className="floating-node node-1">SYSTEM: ACTIVE</div>
+//               <div className="floating-node node-2">REWARDS: $5,000+</div>
+
+//               {/* <svg viewBox="0 0 500 500" className="cipher-svg">
+//                 <defs>
+//                   <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+//                     <stop offset="0%" style={{ stopColor: '#f1f5f9', stopOpacity: 1 }} />
+//                     <stop offset="100%" style={{ stopColor: '#cbd5e1', stopOpacity: 1 }} />
+//                   </linearGradient>
+//                 </defs>
+//                 <g>
+//                   <path d="M150 400 L350 400 L380 435 L120 435 Z" fill="#94a3b8" />
+//                   <rect x="70" y="90" width="360" height="270" rx="24" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="6" />
+//                   <rect x="90" y="110" width="320" height="230" rx="12" fill="#1e293b" />
+//                   <rect x="120" y="150" width="120" height="10" rx="5" fill="oklch(0.83 0.13 160)" opacity="0.9" />
+//                   <rect x="120" y="180" width="180" height="10" rx="5" fill="#a855f7" opacity="0.6" />
+//                   <rect x="120" y="210" width="140" height="10" rx="5" fill="oklch(0.83 0.13 160)" opacity="0.4" />
+//                   <circle cx="120" cy="125" r="4" fill="#ef4444" />
+//                   <circle cx="138" cy="125" r="4" fill="#f59e0b" />
+//                   <circle cx="156" cy="125" r="4" fill="#10b981" />
+//                 </g>
+//               </svg> */}
+//                <img
+//       src="/img/Gemini_Generated_Image_mor86gmor86gmor8.png"   // <-- you will add your real image
+//       alt="Agri Tech Illustration"
+//       className="cipher-image"
+//     />
+//             </div>
+//           </div>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+import React from 'react';
+
 export default function CipherThon() {
   return (
     <div className="cipher-container">
@@ -23,7 +344,7 @@ export default function CipherThon() {
           --input: oklch(0.9731 0 0);
           --ring: oklch(0.8348 0.1302 160.908);
           --font-sans: 'Outfit', sans-serif;
-          --radius: 0.75rem;
+          --radius: 1.5rem;
         }
 
         * {
@@ -37,16 +358,8 @@ export default function CipherThon() {
           background-color: var(--background);
           color: var(--foreground);
           font-family: var(--font-sans);
-          overflow-x: hidden;
+          overflow: hidden;
           position: relative;
-          
-          /* Hides scrollbar for Chrome, Safari and Opera */
-          &::-webkit-scrollbar {
-            display: none;
-          }
-          /* Hides scrollbar for IE, Edge and Firefox */
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
         }
 
         /* Ambient Background Glows */
@@ -95,6 +408,7 @@ export default function CipherThon() {
           grid-template-columns: 1.1fr 0.9fr;
           gap: 60px;
           align-items: center;
+          min-height: 70vh;
         }
 
         .cipher-byline {
@@ -146,7 +460,7 @@ export default function CipherThon() {
           background: var(--primary);
           color: var(--primary-foreground);
           border: none;
-          border-radius: var(--radius);
+          border-radius: 12px;
           font-weight: 700;
           font-size: 1.05rem;
           cursor: pointer;
@@ -165,7 +479,7 @@ export default function CipherThon() {
           color: var(--foreground);
           background: var(--secondary);
           border: 1px solid var(--border);
-          border-radius: var(--radius);
+          border-radius: 12px;
           font-weight: 600;
           cursor: pointer;
           transition: all 0.3s ease;
@@ -176,6 +490,7 @@ export default function CipherThon() {
           border-color: var(--primary);
         }
 
+        /* --- STYLED IMAGE SECTION --- */
         .cipher-right {
           position: relative;
           display: flex;
@@ -186,7 +501,60 @@ export default function CipherThon() {
         .cipher-illustration-container {
           position: relative;
           width: 100%;
-          max-width: 500px;
+          max-width: 520px;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image-frame {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          border-radius: var(--radius);
+          padding: 12px;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(10px);
+          border: 1px solid var(--border);
+          box-shadow: 
+            0 25px 50px -12px rgba(0, 0, 0, 0.1),
+            inset 0 0 20px rgba(255, 255, 255, 0.5);
+          overflow: hidden;
+          z-index: 2;
+          animation: floatHero 6s ease-in-out infinite;
+        }
+
+        .cipher-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: calc(var(--radius) - 8px);
+          display: block;
+          transition: transform 0.5s ease;
+        }
+
+        .image-frame:hover .cipher-image {
+          transform: scale(1.05);
+        }
+
+        /* Decorative "Scanner" line effect */
+        .image-frame::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, var(--primary), transparent);
+          animation: scannerLine 4s linear infinite;
+          opacity: 0.5;
+          z-index: 3;
+        }
+
+        @keyframes scannerLine {
+          0% { top: 0%; }
+          100% { top: 100%; }
         }
 
         .orbital {
@@ -197,51 +565,54 @@ export default function CipherThon() {
           transform: translate(-50%, -50%);
           pointer-events: none;
         }
-        .orbit-1 { width: 110%; height: 110%; animation: rotateCW 30s linear infinite; }
-        .orbit-2 { width: 130%; height: 130%; border-style: dashed; animation: rotateCCW 40s linear infinite; }
+        .orbit-1 { width: 115%; height: 115%; border-color: var(--primary); opacity: 0.3; animation: rotateCW 30s linear infinite; }
+        .orbit-2 { width: 140%; height: 140%; border-style: dashed; opacity: 0.2; animation: rotateCCW 45s linear infinite; }
 
         @keyframes rotateCW { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
         @keyframes rotateCCW { from { transform: translate(-50%, -50%) rotate(360deg); } to { transform: translate(-50%, -50%) rotate(0deg); } }
 
-        .cipher-svg {
-          width: 100%;
-          height: auto;
-          filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
-          animation: floatHero 6s ease-in-out infinite;
-          z-index: 2;
-          position: relative;
+        .floating-node {
+          position: absolute;
+          padding: 8px 16px;
+          background: var(--background);
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: var(--foreground);
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          gap: 8px;
         }
+
+        .floating-node::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--primary);
+        }
+
+        .node-1 { top: 5%; right: -2%; animation: floatNode 4s ease-in-out infinite; }
+        .node-2 { bottom: 10%; left: -5%; animation: floatNode 4s ease-in-out infinite 1s; }
 
         @keyframes floatHero {
           0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
+          50% { transform: translateY(-15px); }
         }
-
-        .floating-node {
-          position: absolute;
-          padding: 10px 18px;
-          background: var(--background);
-          border: 1px solid var(--border);
-          border-radius: 12px;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-          font-size: 0.8rem;
-          font-weight: 700;
-          color: var(--primary-foreground);
-          z-index: 5;
-          animation: floatNode 4s ease-in-out infinite;
-        }
-        .node-1 { top: 10%; right: -5%; border-left: 4px solid var(--primary); }
-        .node-2 { bottom: 15%; left: -10%; border-left: 4px solid #64748b; }
 
         @keyframes floatNode {
           0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-12px); }
+          50% { transform: translateY(-10px); }
         }
 
         @media (max-width: 1024px) {
-          .cipher-content { grid-template-columns: 1fr; text-align: center; gap: 60px; }
+          .cipher-content { grid-template-columns: 1fr; text-align: center; gap: 80px; }
           .cipher-description { margin: 0 auto 40px; }
           .cipher-buttons { justify-content: center; }
+          .cipher-illustration-container { max-width: 400px; margin: 0 auto; }
         }
       `}</style>
 
@@ -267,38 +638,33 @@ export default function CipherThon() {
             </p>
 
             <div className="cipher-buttons">
-              <button className="btn-register">Start Your Journey</button>
-              <button className="btn-problem">Explore Tracks</button>
+              <a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1">
+              <button className="btn-register">Register</button>
+              </a>
             </div>
           </div>
 
           <div className="cipher-right">
             <div className="cipher-illustration-container">
+              {/* Animated Background Orbits */}
               <div className="orbital orbit-1"></div>
               <div className="orbital orbit-2"></div>
               
+              {/* Floating UI Badges */}
               <div className="floating-node node-1">SYSTEM: ACTIVE</div>
-              <div className="floating-node node-2">REWARDS: $5,000+</div>
+              <div className="floating-node node-2">ANNAM.AI</div>
 
-              <svg viewBox="0 0 500 500" className="cipher-svg">
-                <defs>
-                  <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#f1f5f9', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#cbd5e1', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <g>
-                  <path d="M150 400 L350 400 L380 435 L120 435 Z" fill="#94a3b8" />
-                  <rect x="70" y="90" width="360" height="270" rx="24" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="6" />
-                  <rect x="90" y="110" width="320" height="230" rx="12" fill="#1e293b" />
-                  <rect x="120" y="150" width="120" height="10" rx="5" fill="oklch(0.83 0.13 160)" opacity="0.9" />
-                  <rect x="120" y="180" width="180" height="10" rx="5" fill="#a855f7" opacity="0.6" />
-                  <rect x="120" y="210" width="140" height="10" rx="5" fill="oklch(0.83 0.13 160)" opacity="0.4" />
-                  <circle cx="120" cy="125" r="4" fill="#ef4444" />
-                  <circle cx="138" cy="125" r="4" fill="#f59e0b" />
-                  <circle cx="156" cy="125" r="4" fill="#10b981" />
-                </g>
-              </svg>
+              {/* Styled Image Frame */}
+              <div className="image-frame">
+                <img
+                  src="/img/Gemini_Generated_Image_mor86gmor86gmor8.png"
+                  alt="Innovation Illustration"
+                  className="cipher-image"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop";
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>

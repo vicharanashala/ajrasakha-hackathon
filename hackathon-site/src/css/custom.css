@@ -1,10 +1,4 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* 
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -17,7 +11,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -27,4 +20,123 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+
+
+
+
+:root {
+  /* ================= Base ================= */
+  --background: oklch(0.9911 0 0);
+  --foreground: oklch(0.2046 0 0);
+
+  /* ================= Brand ================= */
+  --brand-primary: oklch(0.8348 0.1302 160.908);
+  --brand-secondary: oklch(0.6231 0.188 259.8145);
+  --brand-accent: oklch(0.7686 0.1647 70.0804);
+
+  /* ================= Surfaces ================= */
+  --surface-0: oklch(0.9911 0 0);      /* Page */
+  --surface-1: oklch(0.9731 0 0);      /* Cards */
+  --surface-2: oklch(0.9461 0 0);      /* Elevated */
+  --surface-3: oklch(0.9037 0 0);      /* Borders */
+
+  /* ================= Text ================= */
+  --text-strong: oklch(0.2046 0 0);
+  --text-normal: oklch(0.2626 0 0);
+  --text-muted: oklch(0.4386 0 0);
+  --text-inverse: oklch(0.9934 0.0032 17.2118);
+
+  /* ================= Border ================= */
+  --border-subtle: oklch(0.9037 0 0);
+  --border-strong: oklch(0.8452 0 0);
+
+  /* ================= Glass ================= */
+  --glass-bg: oklch(0.9911 0 0 / 0.75);
+  --glass-border: oklch(0.9037 0 0 / 0.8);
+
+  /* ================= Shadow ================= */
+  --shadow-soft: 0px 8px 30px oklch(0.2 0 0 / 0.08);
+}
+
+/* ================= Dark Mode ================= */
+
+html[data-theme='dark'] {
+  --background: oklch(0.1822 0 0);
+  --foreground: oklch(0.9288 0.0126 255.5078);
+  
+  --brand-primary: oklch(0.8003 0.1821 151.711);
+  --brand-secondary: oklch(0.7137 0.1434 254.624);
+  --brand-accent: oklch(0.8369 0.1644 84.4286);
+
+  --surface-0: oklch(0.1822 0 0);
+  --surface-1: oklch(0.2046 0 0);
+  --surface-2: oklch(0.2393 0 0);
+  --surface-3: oklch(0.2809 0 0);
+
+  --text-strong: oklch(0.9851 0 0);
+  --text-normal: oklch(0.9288 0.0126 255.5078);
+  --text-muted: oklch(0.7122 0 0);
+  --text-inverse: oklch(0.1822 0 0);
+
+  --border-subtle: oklch(0.2809 0 0);
+  --border-strong: oklch(0.342 0 0);
+
+  --glass-bg: oklch(0.1822 0 0 / 0.75);
+  --glass-border: oklch(0.2809 0 0 / 0.8);
+
+  --shadow-soft: 0px 10px 40px oklch(0 0 0 / 0.6);
+}
+
+
+/* ===============================
+   Global Page Surfaces
+================================ */
+
+/* Entire page background */
+body {
+  background: var(--surface-0);
+  color: var(--text-normal);
+}
+
+/* Main page wrapper */
+.main-wrapper {
+  background: var(--surface-0);
+}
+
+/* Content containers */
+.container,
+.container-fluid {
+  background: transparent;
+}
+
+/* Docs content surface */
+.theme-doc-markdown,
+.markdown,
+.theme-doc-content,
+.theme-doc-content > div {
+  background: var(--surface-0);
+}
+
+/* Inner doc page card */
+.theme-doc-content > div > main {
+  background: var(--surface-0);
+}
+
+/* Remove Infima dark panels */
+html[data-theme='dark'] .theme-doc-sidebar-container,
+html[data-theme='dark'] .theme-doc-sidebar {
+  background: var(--surface-1);
+}
+
+/* Navbar spacer */
+.navbar__inner,
+.navbar {
+  background: var(--glass-bg);
+}
+
+footer,
+.cipher-footer {
+  background: var(--glass-bg) !important;
 }

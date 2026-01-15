@@ -2,46 +2,83 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the **AjraSakha Hackathon** — a challenge to re-imagine how education works in the digital age.
 
-## Getting Started
+Your mission is to **build an education platform that connects students and educators directly**, enabling **affordable, personalized, and accessible learning experiences** for everyone.
 
-Get started by **creating a new site**.
+This is not just about building an app — it’s about building a **movement for better learning**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+---
 
-### What you'll need
+## 🧩 Team Structure
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Each team should have **4 members**:
 
-## Generate a new site
+- 🧑‍💼 **1 Product Manager**
+- 🎨 **1 Designer**
+- 💻 **2 Developers**
 
-Generate a new Docusaurus site using the **classic template**.
+Teams are encouraged to collaborate closely across roles to build a strong product vision and execution.
 
-The classic template will automatically be added to your project after you run the command:
+---
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## 🎯 Problem Statement
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Create a platform where:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- Students can easily find and enroll in courses  
+- Educators can create and manage their own courses  
+- Learning is affordable, accessible, and personalized  
 
-## Start your site
+The platform should remove barriers between learners and teachers and make quality education available to all.
 
-Run the development server:
+---
 
-```bash
-cd my-website
-npm run start
-```
+## 🔍 Focus Areas
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Your solution should focus on the following core areas:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+- **User registration and profiles**
+- **Course creation and enrollment**
+- **Payments & trust system** *(optional)*
+- **Personalized learning paths** *(optional)*
+- **Mobile-first and accessible design**
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---
+
+## 📦 Minimum Product Scope (MVP)
+
+Your submission should include at least the following:
+
+- ✅ A **functional registration system** for students and educators  
+- ✅ **Course creation** and **course browsing**  
+- ✅ A **payment system or contract flow** *(optional)*  
+- ✅ A **basic rating / review or trust system**  
+- ✅ **Responsive design** and usable **UX**
+
+---
+
+## ⭐ Bonus Points
+
+Want to stand out?
+
+> **Your creativity + innovation = Brownie Points**
+
+Go beyond the basics:
+- AI-powered recommendations  
+- Gamification  
+- Smart dashboards  
+- Social learning features  
+- Or anything that improves learning outcomes  
+
+---
+
+## 🏁 Final Goal
+
+Build something that proves:
+
+> Education can be **direct, affordable, and human-centered** — powered by technology.
+
+Good luck, and may the best learning platform win! 🏆
