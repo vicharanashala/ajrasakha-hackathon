@@ -1,117 +1,5 @@
-// "use client"
+import { useState } from "react";
 
-// import { useState } from "react"
-// import './Landing2.css'
-
-// export default function HackathonSchedule() {
-//   const [activeTab, setActiveTab] = useState("online")
-
-//   const scheduleData = {
-//     online: [
-//       {
-//         id: 1,
-//         time: "10:00-10:00",
-//         phase: "Phase - I",
-//         description:
-//           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis quam malesuada scelerisque ultrices gravida",
-//       },
-//       {
-//         id: 2,
-//         time: "12:00-02:00",
-//         phase: "Phase - II",
-//         description:
-//           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis quam malesuada scelerisque ultrices gravida",
-//       },
-//     ],
-//     offline: [
-//       {
-//         id: 1,
-//         time: "09:00-11:00",
-//         phase: "Opening Ceremony",
-//         description:
-//           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis quam malesuada scelerisque ultrices gravida",
-//       },
-//       {
-//         id: 2,
-//         time: "11:00-23:00",
-//         phase: "Coding Marathon",
-//         description:
-//           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis quam malesuada scelerisque ultrices gravida",
-//       },
-//     ],
-//   }
-
-//   const currentSchedule = activeTab === "online" ? scheduleData.online : scheduleData.offline
-
-//   return (
-//     <section className="hackathon-schedule">
-//       {/* Decorative elements */}
-//       <div className="schedule-decoration schedule-triangle"></div>
-//       <div className="schedule-decoration schedule-square-1"></div>
-//       <div className="schedule-decoration schedule-square-2"></div>
-//       <div className="schedule-decoration schedule-circle"></div>
-
-//       <div className="schedule-container">
-//         {/* Header */}
-//         <div className="schedule-header">
-//           <h2 className="schedule-title">
-//             Hackathon <span className="schedule-highlight">Schedule</span>
-//           </h2>
-//           <p className="schedule-subtitle">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis quam malesuada scelerisque ultrices gravida
-//           </p>
-//         </div>
-
-//         {/* Date */}
-//         <div className="schedule-date">
-//           <h3>Friday, 10 January 2023</h3>
-//         </div>
-
-//         {/* Tab Buttons */}
-//         <div className="schedule-tabs">
-//           <button
-//             className={`schedule-tab ${activeTab === "online" ? "active" : ""}`}
-//             onClick={() => setActiveTab("online")}
-//           >
-//             CipherWeek (Online)
-//           </button>
-//           <button
-//             className={`schedule-tab ${activeTab === "offline" ? "active" : ""}`}
-//             onClick={() => setActiveTab("offline")}
-//           >
-//             Offline 24 hrs Hackathon
-//           </button>
-//         </div>
-
-//         {/* Schedule Items */}
-//         <div className="schedule-items">
-//           {currentSchedule.map((item) => (
-//             <div key={item.id} className="schedule-item">
-//               <div className="schedule-time">
-//                 <span>{item.time}</span>
-//               </div>
-//               <div className="schedule-content">
-//                 <h4 className="schedule-phase">{item.phase}</h4>
-//                 <p className="schedule-description">{item.description}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-import React, { useState } from 'react';
-
-/**
- * HackathonSchedule Component
- * Enhanced version of the original design with:
- * 1. Almost-black (#050505) theme with ambient neon glows.
- * 2. Glassmorphism schedule cards with hover states.
- * 3. Animated decorative floating shapes.
- * 4. Premium typography and gradient highlights.
- */
 export default function HackathonSchedule() {
   const [activeTab, setActiveTab] = useState("online");
 
@@ -155,27 +43,31 @@ export default function HackathonSchedule() {
   return (
     <section className="hackathon-schedule">
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
         :root {
-          --bg-black: #050505;
-          --accent-orange: #f59e0b;
-          --accent-purple: #a855f7;
-          --text-main: #ffffff;
-          --text-dim: #94a3b8;
-          --glass: rgba(255, 255, 255, 0.03);
-          --glass-hover: rgba(255, 255, 255, 0.06);
+          --background: oklch(0.9911 0 0);
+          --foreground: oklch(0.2046 0 0);
+          --primary: oklch(0.8348 0.1302 160.908);
+          --primary-foreground: oklch(0.2626 0.0147 166.4589);
+          --border: oklch(0.9037 0 0);
+          --muted-foreground: oklch(0.2435 0 0);
+          --glass-bg: rgba(255, 255, 255, 0.6);
+          --glass-border: oklch(0.9037 0 0);
+          --font-sans: 'Outfit', sans-serif;
         }
 
         .hackathon-schedule {
           position: relative;
-          background-color: var(--bg-black);
-          color: var(--text-main);
+          background-color: var(--background);
+          color: var(--foreground);
           padding: 100px 20px;
           overflow: hidden;
           min-height: 100vh;
-          font-family: 'Inter', system-ui, -apple-system, sans-serif;
+          font-family: var(--font-sans);
         }
 
-        /* Ambient Background Glows */
+        /* Ambient Background Glows - Mint Themed */
         .ambient-glow {
           position: absolute;
           width: 50vw;
@@ -184,15 +76,15 @@ export default function HackathonSchedule() {
           filter: blur(120px);
           z-index: 0;
           pointer-events: none;
-          opacity: 0.15;
+          opacity: 0.3;
         }
-        .glow-1 { top: -10%; left: -10%; background: var(--accent-purple); }
-        .glow-2 { bottom: -10%; right: -10%; background: var(--accent-orange); }
+        .glow-1 { top: -10%; left: -10%; background: var(--primary); }
+        .glow-2 { bottom: -10%; right: -10%; background: oklch(0.9 0.05 190); }
 
-        /* Decorative Floating Elements */
+        /* Decorative Floating Elements (Mint Outline) */
         .schedule-decoration {
           position: absolute;
-          opacity: 0.4;
+          opacity: 0.3;
           z-index: 1;
           pointer-events: none;
           animation: float 6s ease-in-out infinite;
@@ -202,27 +94,27 @@ export default function HackathonSchedule() {
           width: 0; height: 0;
           border-left: 30px solid transparent;
           border-right: 30px solid transparent;
-          border-bottom: 50px solid rgba(168, 85, 247, 0.3);
+          border-bottom: 50px solid var(--primary);
           top: 15%; left: 10%;
         }
 
         .schedule-square-1 {
           width: 40px; height: 40px;
-          border: 2px solid var(--accent-orange);
+          border: 2px solid var(--primary);
           bottom: 15%; left: 8%;
           transform: rotate(15deg);
         }
 
         .schedule-square-2 {
           width: 30px; height: 30px;
-          border: 2px solid var(--accent-purple);
+          border: 2px solid oklch(0.6 0.1 200);
           top: 25%; right: 10%;
           transform: rotate(-20deg);
         }
 
         .schedule-circle {
           width: 25px; height: 25px;
-          border: 2px solid var(--accent-orange);
+          border: 2px solid var(--primary);
           border-radius: 50%;
           bottom: 20%; right: 12%;
         }
@@ -250,20 +142,17 @@ export default function HackathonSchedule() {
           font-weight: 900;
           margin-bottom: 20px;
           letter-spacing: -2px;
-          background: linear-gradient(to bottom, #fff, #94a3b8);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: var(--foreground);
         }
 
         .schedule-highlight {
-          color: var(--accent-orange);
-          text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+          color: var(--primary);
+          position: relative;
         }
 
         .schedule-subtitle {
           font-size: 1.1rem;
-          color: var(--text-dim);
+          color: var(--muted-foreground);
           max-width: 600px;
           margin: 0 auto;
           line-height: 1.6;
@@ -277,88 +166,89 @@ export default function HackathonSchedule() {
 
         .schedule-date h3 {
           font-size: 1.5rem;
-          font-weight: 600;
-          color: white;
-          background: rgba(255, 255, 255, 0.05);
-          padding: 8px 24px;
+          font-weight: 700;
+          color: var(--foreground);
+          background: oklch(0.96 0.01 160);
+          padding: 8px 32px;
           border-radius: 100px;
           display: inline-block;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid var(--border);
         }
 
         /* Tab Buttons */
         .schedule-tabs {
           display: flex;
           justify-content: center;
-          gap: 15px;
+          gap: 12px;
           margin-bottom: 60px;
           padding: 6px;
-          background: rgba(255, 255, 255, 0.03);
+          background: oklch(0.97 0 0);
           width: fit-content;
           margin-left: auto;
           margin-right: auto;
-          border-radius: 16px;
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 20px;
+          border: 1px solid var(--border);
         }
 
         .schedule-tab {
-          padding: 12px 30px;
+          padding: 12px 32px;
           border: none;
-          border-radius: 12px;
+          border-radius: 14px;
           font-size: 0.95rem;
           font-weight: 700;
           cursor: pointer;
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           background-color: transparent;
-          color: var(--text-dim);
+          color: var(--muted-foreground);
         }
 
         .schedule-tab.active {
-          background-color: var(--accent-orange);
-          color: #000;
-          box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+          background-color: var(--primary);
+          color: var(--primary-foreground);
+          box-shadow: 0 4px 20px oklch(0.83 0.13 160 / 0.3);
         }
 
         .schedule-tab:hover:not(.active) {
-          color: white;
-          background-color: rgba(255, 255, 255, 0.05);
+          color: var(--foreground);
+          background-color: oklch(0.94 0 0);
         }
 
         /* Schedule Items */
         .schedule-items {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 24px;
         }
 
         .schedule-item {
           display: flex;
           gap: 40px;
-          background: var(--glass);
-          backdrop-filter: blur(10px);
+          background: var(--glass-bg);
+          backdrop-filter: blur(16px);
           padding: 40px;
-          border-radius: 24px;
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 28px;
+          border: 1px solid var(--border);
           transition: all 0.4s ease;
           position: relative;
           overflow: hidden;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
         }
 
         .schedule-item::before {
           content: '';
           position: absolute;
           left: 0; top: 0; bottom: 0;
-          width: 4px;
-          background: var(--accent-orange);
+          width: 6px;
+          background: var(--primary);
           opacity: 0;
           transition: opacity 0.3s;
         }
 
         .schedule-item:hover {
-          background: var(--glass-hover);
-          border-color: rgba(245, 158, 11, 0.2);
-          transform: translateX(10px);
-          box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+          background: white;
+          border-color: var(--primary);
+          transform: translateX(12px);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.06);
         }
 
         .schedule-item:hover::before {
@@ -366,19 +256,19 @@ export default function HackathonSchedule() {
         }
 
         .schedule-time {
-          min-width: 140px;
+          min-width: 160px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
         }
 
         .schedule-time span {
           font-size: 1.25rem;
           font-weight: 800;
-          color: white;
+          color: var(--foreground);
           letter-spacing: -0.5px;
-          border-right: 2px solid rgba(245, 158, 11, 0.3);
-          padding-right: 30px;
+          border-left: 4px solid var(--primary);
+          padding-left: 20px;
         }
 
         .schedule-content {
@@ -387,34 +277,33 @@ export default function HackathonSchedule() {
 
         .schedule-phase {
           font-size: 1.5rem;
-          font-weight: 700;
-          color: white;
+          font-weight: 800;
+          color: var(--foreground);
           margin: 0 0 10px 0;
         }
 
         .schedule-description {
           font-size: 1rem;
-          color: var(--text-dim);
+          color: var(--muted-foreground);
           margin: 0;
-          line-height: 1.6;
+          line-height: 1.7;
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
           .schedule-item {
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
             padding: 30px;
           }
           .schedule-time {
-            justify-content: flex-start;
             min-width: auto;
           }
           .schedule-time span {
-            border-right: none;
-            border-bottom: 2px solid var(--accent-orange);
-            padding-right: 0;
-            padding-bottom: 10px;
+            border-left: none;
+            border-bottom: 3px solid var(--primary);
+            padding-left: 0;
+            padding-bottom: 8px;
             display: inline-block;
           }
           .schedule-title { font-size: 2.5rem; }
@@ -437,7 +326,7 @@ export default function HackathonSchedule() {
             Hackathon <span className="schedule-highlight">Schedule</span>
           </h2>
           <p className="schedule-subtitle">
-            Explore the journey from initial ideation to the final presentation. Mark your calendars for these key milestones.
+            The architect's roadmap to success. Mark your progress as we build the future together over the next 48 hours.
           </p>
         </header>
 
@@ -452,13 +341,13 @@ export default function HackathonSchedule() {
             className={`schedule-tab ${activeTab === "online" ? "active" : ""}`}
             onClick={() => setActiveTab("online")}
           >
-            CipherWeek (Online)
+            Online Phase
           </button>
           <button
             className={`schedule-tab ${activeTab === "offline" ? "active" : ""}`}
             onClick={() => setActiveTab("offline")}
           >
-            Offline 24 hrs Hackathon
+            Offline Finale
           </button>
         </div>
 

@@ -1,5 +1,4 @@
 
-import '../components/Shared/Landing1.css'
 import CipherThon from "../components/Shared/Landing1"
 import HackathonSchedule from '../components/Shared/Landing2'
 import PrizeCards from '../components/Shared/Landing3'

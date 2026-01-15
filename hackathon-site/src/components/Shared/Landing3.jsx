@@ -1,22 +1,12 @@
-import React from 'react';
-
-/**
- * PrizeCards Component
- * A premium, almost-black themed rewards section for a Hackathon.
- * Updated:
- * 1. Forced 3-column layout (single line) for compact space usage.
- * 2. Icon rotation increased to 180 degrees on hover.
- * 3. Reduced vertical padding for a more efficient footprint.
- */
-export default function App() {
+export default function PrizeCards() {
   const prizes = [
     {
       position: 2,
       title: "Silver Runner Up",
       cash: "$300",
       icon: "🥈",
-      color: "#94a3b8",
-      glow: "rgba(148, 163, 184, 0.3)",
+      color: "oklch(0.7 0.01 160)", // Subtle Silver-Mint
+      glow: "oklch(0.83 0.13 160 / 0.2)",
       perks: ["Premium Credits", "Digital Certificate", "Swag Kit"]
     },
     {
@@ -24,8 +14,8 @@ export default function App() {
       title: "Grand Champion",
       cash: "$400",
       icon: "🏆",
-      color: "#fbbf24",
-      glow: "rgba(251, 191, 36, 0.4)",
+      color: "oklch(0.83 0.13 160)", // Vivid Mint
+      glow: "oklch(0.83 0.13 160 / 0.4)",
       perks: ["VIP Access", "Mentor Support", "Trophy & Kit"],
       featured: true
     },
@@ -34,8 +24,8 @@ export default function App() {
       title: "Bronze Finalist",
       cash: "$200",
       icon: "🥉",
-      color: "#d97706",
-      glow: "rgba(217, 119, 6, 0.3)",
+      color: "oklch(0.6 0.05 160)", // Deep Mint
+      glow: "oklch(0.83 0.13 160 / 0.15)",
       perks: ["Basic Credits", "Participation NFT", "E-Badge"]
     },
   ];
@@ -44,58 +34,53 @@ export default function App() {
     <div className="prize-app-container">
       {/* Embedded CSS for single-file portability */}
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
         :root {
-          --bg-dark: #050505; /* Almost Black */
-          --card-bg: rgba(15, 23, 42, 0.6);
-          --card-hover-bg: rgba(30, 41, 59, 0.8);
-          --text-primary: #ffffff;
-          --text-secondary: #94a3b8;
-          --accent-purple: #a855f7;
+          --background: oklch(0.9911 0 0);
+          --foreground: oklch(0.2046 0 0);
+          --primary: oklch(0.8348 0.1302 160.908);
+          --primary-foreground: oklch(0.2626 0.0147 166.4589);
+          --border: oklch(0.9037 0 0);
+          --muted-foreground: oklch(0.2435 0 0);
+          --font-sans: 'Outfit', sans-serif;
         }
 
         .prize-app-container {
-          min-height: 100vh;
-          background-color: var(--bg-dark);
-          color: var(--text-primary);
-          font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+          min-height: auto;
+          background-color: var(--background);
+          color: var(--foreground);
+          font-family: var(--font-sans);
           overflow-x: hidden;
           position: relative;
+          padding: 60px 0;
         }
 
         .background-effects {
-          position: fixed;
+          position: absolute;
           inset: 0;
           overflow: hidden;
           pointer-events: none;
           z-index: 1;
         }
 
-        .glow-top {
+        .glow-mint {
           position: absolute;
-          top: -10%;
-          left: -10%;
-          width: 50%;
-          height: 50%;
-          background: radial-gradient(circle, rgba(88, 28, 135, 0.1) 0%, transparent 70%);
-          filter: blur(80px);
+          width: 40%;
+          height: 40%;
+          background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+          filter: blur(100px);
+          opacity: 0.15;
         }
-
-        .glow-bottom {
-          position: absolute;
-          bottom: -10%;
-          right: -10%;
-          width: 50%;
-          height: 50%;
-          background: radial-gradient(circle, rgba(30, 58, 138, 0.1) 0%, transparent 70%);
-          filter: blur(80px);
-        }
+        .glow-top { top: -10%; left: 10%; }
+        .glow-bottom { bottom: -10%; right: 10%; }
 
         .content-wrapper {
           position: relative;
           z-index: 10;
           max-width: 1100px;
           margin: 0 auto;
-          padding: 40px 20px; /* Reduced vertical padding */
+          padding: 0 20px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -103,57 +88,46 @@ export default function App() {
 
         .header-section {
           text-align: center;
-          margin-bottom: 60px; /* Reduced margin */
+          margin-bottom: 60px;
         }
 
         .header-subtitle {
-          color: var(--accent-purple);
-          font-weight: 700;
-          letter-spacing: 0.2em;
+          color: var(--primary);
+          font-weight: 800;
+          letter-spacing: 0.3em;
           text-transform: uppercase;
           font-size: 0.75rem;
-          margin-bottom: 8px;
+          margin-bottom: 12px;
+          background: oklch(0.96 0.01 160);
+          padding: 4px 12px;
+          border-radius: 4px;
+          display: inline-block;
         }
 
         .header-main-title {
-          font-size: clamp(1.8rem, 5vw, 3rem); /* Slightly smaller for efficiency */
+          font-size: clamp(2rem, 5vw, 3rem);
           font-weight: 900;
-          background: linear-gradient(to bottom, #ffffff, #94a3b8);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: var(--foreground);
           margin-bottom: 16px;
-          font-style: italic;
           line-height: 1.1;
+          letter-spacing: -1px;
         }
 
         .header-description {
-          color: var(--text-secondary);
+          color: var(--muted-foreground);
           max-width: 550px;
           margin: 0 auto;
           font-size: 1rem;
-          line-height: 1.5;
+          line-height: 1.6;
         }
 
         .prize-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* 👈 correct property */
-  gap: 16px;
-  width: 100%;
-  align-items: stretch;
-  padding-top: 40px;
-}
-
-        /* Mobile specific adjustments to maintain visibility in single line */
-        @media (max-width: 768px) {
-          .prize-grid {
-            gap: 10px;
-          }
-          .card-title { font-size: 1rem; }
-          .cash-value { font-size: 1.5rem; }
-          .badge-icon-box { width: 60px; height: 60px; }
-          .badge-emoji { font-size: 1.8rem; }
-          .badge-anchor { top: -30px; }
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          width: 100%;
+          align-items: stretch;
+          padding-top: 40px;
         }
 
         .prize-card-wrapper {
@@ -165,7 +139,7 @@ export default function App() {
         }
 
         .prize-card-wrapper:hover {
-          transform: translateY(-8px);
+          transform: translateY(-10px);
         }
 
         .badge-anchor {
@@ -178,13 +152,13 @@ export default function App() {
           width: 80px;
           height: 80px;
           border-radius: 50%;
-          background-color: #0f172a;
-          border: 2px solid transparent;
+          background-color: white;
+          border: 2px solid var(--border);
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-          transition: transform 0.4s ease;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+          transition: all 0.4s ease;
         }
 
         .badge-emoji {
@@ -192,9 +166,13 @@ export default function App() {
           transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
-        /* Icon rotates 180 degrees on hover */
         .prize-card-wrapper:hover .badge-emoji {
           transform: rotate(180deg);
+        }
+
+        .prize-card-wrapper:hover .badge-icon-box {
+          border-color: var(--primary);
+          box-shadow: 0 15px 35px var(--glow);
         }
 
         .badge-number-label {
@@ -204,69 +182,73 @@ export default function App() {
           width: 32px;
           height: 32px;
           border-radius: 50%;
-          border: 2px solid transparent;
-          background-color: #1e293b;
+          background-color: var(--background);
+          border: 2px solid var(--border);
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: 800;
           font-size: 0.9rem;
+          color: var(--foreground);
         }
 
         .card-body {
           width: 100%;
           height: 100%;
-          background-color: var(--card-bg);
-          backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 1.5rem; /* Slightly smaller radius for compact look */
-          padding: 50px 16px 24px 16px;
+          background-color: white;
+          border: 1px solid var(--border);
+          border-radius: 2rem;
+          padding: 60px 24px 32px;
           text-align: center;
           transition: all 0.4s ease;
           display: flex;
           flex-direction: column;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.02);
         }
 
         .featured-ring {
-          border-color: rgba(251, 191, 36, 0.3);
-          box-shadow: 0 0 30px rgba(251, 191, 36, 0.1);
+          border-color: var(--primary);
+          background: oklch(0.99 0.01 160);
+          box-shadow: 0 0 40px oklch(0.83 0.13 160 / 0.08);
         }
 
         .prize-card-wrapper:hover .card-body {
-          background-color: var(--card-hover-bg);
-          border-color: rgba(255, 255, 255, 0.1);
+          border-color: var(--primary);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.06);
         }
 
         .card-title {
-          font-size: 1.1rem;
-          font-weight: 700;
-          margin-bottom: 6px;
+          font-size: 1.25rem;
+          font-weight: 800;
+          margin-bottom: 8px;
+          color: var(--foreground);
         }
 
         .cash-container {
-          margin-bottom: 16px;
+          margin-bottom: 20px;
         }
 
         .cash-value {
-          font-size: 2rem;
+          font-size: 2.5rem;
           font-weight: 900;
           letter-spacing: -0.05em;
         }
 
         .currency-label {
-          color: #64748b;
-          font-size: 0.75rem;
-          margin-left: 4px;
+          color: var(--muted-foreground);
+          font-size: 0.8rem;
+          margin-left: 6px;
           text-transform: uppercase;
+          font-weight: 700;
         }
 
         .perks-list {
           display: flex;
           flex-direction: column;
-          gap: 8px;
-          margin-bottom: 24px;
-          font-size: 0.75rem;
-          color: var(--text-secondary);
+          gap: 10px;
+          margin-bottom: 30px;
+          font-size: 0.85rem;
+          color: var(--muted-foreground);
           flex-grow: 1;
         }
 
@@ -274,87 +256,85 @@ export default function App() {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 6px;
+          gap: 8px;
         }
 
         .perk-dot {
-          width: 3px;
-          height: 3px;
+          width: 4px;
+          height: 4px;
           border-radius: 50%;
-          background-color: var(--accent-purple);
-          opacity: 0.6;
+          background-color: var(--primary);
         }
 
         .details-button {
           width: 100%;
-          padding: 10px 0;
-          border-radius: 0.75rem;
-          background-color: rgba(255, 255, 255, 0.03);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          color: white;
-          font-weight: 600;
-          font-size: 0.85rem;
+          padding: 14px 0;
+          border-radius: 1rem;
+          background-color: var(--primary);
+          border: none;
+          color: var(--primary-foreground);
+          font-weight: 700;
+          font-size: 0.9rem;
           cursor: pointer;
           transition: all 0.3s ease;
+          box-shadow: 0 4px 15px oklch(0.83 0.13 160 / 0.2);
         }
 
         .details-button:hover {
-          background-color: white;
-          color: black;
-          transform: scale(1.02);
+          filter: brightness(0.95);
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px oklch(0.83 0.13 160 / 0.3);
         }
 
         .floor-shadow {
-          margin-top: 12px;
-          width: 50%;
-          height: 4px;
-          background-color: rgba(0, 0, 0, 0.8);
-          filter: blur(4px);
+          margin-top: 16px;
+          width: 60%;
+          height: 6px;
+          background-color: oklch(0.2 0.01 160 / 0.1);
+          filter: blur(6px);
           border-radius: 100%;
           transition: all 0.5s ease;
-          opacity: 0.3;
         }
 
         .prize-card-wrapper:hover .floor-shadow {
-          width: 70%;
-          opacity: 0.6;
+          width: 80%;
+          background-color: oklch(0.2 0.01 160 / 0.2);
+        }
+
+        @media (max-width: 900px) {
+          .prize-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            gap: 60px;
+          }
+          .content-wrapper { padding-top: 60px; }
         }
       `}</style>
 
-      {/* Background Ambient Glows */}
       <div className="background-effects">
-        <div className="glow-top"></div>
-        <div className="glow-bottom"></div>
+        <div className="glow-mint glow-top"></div>
+        <div className="glow-mint glow-bottom"></div>
       </div>
 
       <div className="content-wrapper">
-        {/* Header Section */}
         <header className="header-section">
-          <h2 className="header-subtitle">Hackathon Finale</h2>
-          <h1 className="header-main-title">
-            PRIZE MONEY FOR THE HACKATHON
-          </h1>
+          <h2 className="header-subtitle">Grand Finale</h2>
+          <h1 className="header-main-title">THE ARCHITECT'S PRIZE POOL</h1>
           <p className="header-description">
-            Celebrate innovation and excellence. Top participants receive the following rewards for their hard work.
+            Exceptional engineering deserves exceptional rewards. We've curated a pool of prizes for the top innovators of AjraSakha.
           </p>
         </header>
 
-        {/* Prize Grid - Forced 3-column single line */}
         <div className="prize-grid">
           {prizes.map((prize) => (
             <div 
               key={prize.position} 
-              className={`prize-card-wrapper ${prize.featured ? 'is-featured' : ''}`}
+              className="prize-card-wrapper"
+              style={{ '--glow': prize.glow }}
             >
               {/* Prize Badge */}
               <div className="badge-anchor">
-                <div 
-                  className="badge-icon-box"
-                  style={{ 
-                    borderColor: prize.color, 
-                    boxShadow: `0 0 25px ${prize.glow}` 
-                  }}
-                >
+                <div className="badge-icon-box">
                   <span className="badge-emoji">{prize.icon}</span>
                 </div>
                 <div 
@@ -385,11 +365,10 @@ export default function App() {
                 </div>
 
                 <button className="details-button">
-                  View Prize Details
+                  View Reward Details
                 </button>
               </div>
 
-              {/* Floor Shadow */}
               <div className="floor-shadow" />
             </div>
           ))}
