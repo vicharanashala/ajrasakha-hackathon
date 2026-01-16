@@ -69,26 +69,29 @@ Teams may:
 - Work on **feature requests** provided by the organizers, or  
 - **Propose and implement their own features**
 
-All solutions must **integrate cleanly** into the existing **Ajrasakha system**, which is built on:
-- **MongoDB**
-- **Express.js**
-- **React**
-- **Node.js**
-- AI-based technologies
+All solutions must be developed in accordance with the **annam.ai technology stack** and be compatible with the existing **Ajrasakha codebase**.
+The Ajrasakha system primarily uses:
+- **TypeScript-based MERN stack** for application development  
+  (MongoDB, Express.js, React, Node.js)
+- **Python** for AI/ML components, using internal libraries and approved open-source frameworks
+
 
 Additional technologies (e.g., **Python**, AI models) may be used as long as the **final solution integrates with the MERN-based system**.
 
-> Projects that **cannot be integrated** into the Ajrasakha system will be **considered failures**, regardless of technical sophistication.
+> Projects that do not adhere to the **annam.ai technology stack**, or are evaluated to be **unmaintainable due to severely disorganized code or poor structure**, will be **considered failures**, regardless of technical sophistication.
+
 
 ---
 
 ## Technical and Cost Requirements
 
-Cost-effectiveness is a **primary evaluation criterion**, especially for large-scale deployment in India.
+Cost-effectiveness is **highly valued and strongly encouraged**, particularly with respect to large-scale deployment in India. Teams that deliver **cost-effective solutions while effectively solving the problem statement** will have a **competitive advantage** in the hackathon evaluation.
+
 
 Teams must:
 - Minimize **GPU usage** and **API costs**
-- Ensure solutions are **cheaper than equivalent human-operated systems**
+- Ensure that solutions demonstrate **improved efficiency, effectiveness, and time savings** when compared to equivalent human-operated processes.
+
 - Justify any **high-cost API usage**
 - Prioritize **expert-validated data** and **localized responses**
 - Prefer **curated datasets** over heavy LLM reliance
@@ -104,7 +107,7 @@ At the end of Phase 1 and Phase 2, teams must submit:
 - Complete **source code**
 - A **working, deployable application**
 - A **short demo video**
-- **Documentation** of integration with Ajrasakha
+- **Documentation** describing the application, its functionality, and architecture.
 - Any additional materials requested by organizers
 
 The project must be:
@@ -118,8 +121,7 @@ The project must be:
 
 Projects will be evaluated on:
 
-- Integration with Ajrasakha
-- Cost-effectiveness and scalability
+- Effectiveness in addressing the problem statement or improving the existing solution, along with code quality and simplicity
 - Technical quality across both phases
 - Innovation and impact
 - Completeness and functionality
@@ -175,7 +177,7 @@ All decisions are final and governed by the **laws of India**.
 All participants must:
 
 - Complete team registration on time
-- Review the Ajrasakha repository
+- Familiarize yourself with the existing solutions and ongoing work being developed by annam.ai.
 - Execute Phase 1 and Phase 2 work
 - Complete all internship obligations
 - Maintain communication with organizers
