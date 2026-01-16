@@ -3,7 +3,6 @@ sidebar_label: Mentor Sessions
 ---
 
 # Mentor Sessions
-Note: This schedule is tentative and may be subject to change.
 
 **Phase 1:  23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM** 
 
@@ -50,3 +49,4 @@ Note: This schedule is tentative and may be subject to change.
 | Session 3 | 02:00 pm  \-  04:00 pm | Rishi, Abiram, Deepthi, Shubhankar |
 | Session 4 | 04:00 pm  \-  06:00 pm | Chahat, Bibin,  Kshitij, Vatsal |
 
+Note: This schedule is tentative and may be subject to change.
