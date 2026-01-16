@@ -6,27 +6,7 @@ export default function CipherThon() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
 
-        :root {
-          --background: oklch(0.9911 0 0);
-          --foreground: oklch(0.2046 0 0);
-          --card: oklch(0.9911 0 0);
-          --card-foreground: oklch(0.2046 0 0);
-          --popover: oklch(0.9911 0 0);
-          --popover-foreground: oklch(0.4386 0 0);
-          --primary: oklch(0.8348 0.1302 160.908);
-          --primary-foreground: oklch(0.2626 0.0147 166.4589);
-          --secondary: oklch(0.994 0 0);
-          --secondary-foreground: oklch(0.2046 0 0);
-          --muted: oklch(0.9461 0 0);
-          --muted-foreground: oklch(0.2435 0 0);
-          --accent: oklch(0.9461 0 0);
-          --accent-foreground: oklch(0.2435 0 0);
-          --border: oklch(0.9037 0 0);
-          --input: oklch(0.9731 0 0);
-          --ring: oklch(0.8348 0.1302 160.908);
-          --font-sans: 'Outfit', sans-serif;
-          --radius: 1.5rem;
-        }
+       
 
         * {
           margin: 0;

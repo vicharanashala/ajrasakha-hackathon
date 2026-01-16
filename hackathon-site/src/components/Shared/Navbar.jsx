@@ -1,8 +1,9 @@
-
 import React, { useEffect, useState } from "react";
-import Link from '@docusaurus/Link';
+import Link from "@docusaurus/Link";
+
 export default function CipherNavbar() {
   const [theme, setTheme] = useState("light");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const html = document.documentElement;
@@ -10,177 +11,178 @@ export default function CipherNavbar() {
     setTheme(current);
   }, []);
 
-  const toggleTheme = () => {
-    const html = document.documentElement;
-    const newTheme = theme === "dark" ? "light" : "dark";
-    html.setAttribute("data-theme", newTheme);
-    setTheme(newTheme);
-  };
-
   return (
-    <nav className="navbar cipher-navbar">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+    <>
+      <nav className="navbar cipher-navbar">
+        <style>{`
+          @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
 
-        .cipher-navbar {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 14px 8%;
-          position: sticky;
-          top: 0;
-          z-index: 1000;
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          background: var(--glass-bg);
-          border-bottom: 1px solid var(--glass-border);
-          font-family: 'Outfit', sans-serif;
-        }
-
-        /* Logo */
-        .cipher-logo-container {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          transition: transform 0.25s ease;
-        }
-
-        .cipher-logo-container:hover {
-          transform: scale(1.05);
-        }
-
-        .navbar-logo-img {
-          height: 42px;
-          object-fit: contain;
-        }
-
-        /* Menu */
-        .navbar-menu {
-          display: flex;
-          gap: 48px;
-        }
-
-        .nav-link {
-          color: var(--text-muted);
-          font-weight: 600;
-          font-size: 0.95rem;
-          text-decoration: none;
-          position: relative;
-          padding: 6px 0;
-          transition: color 0.25s ease;
-        }
-
-        .nav-link:hover {
-          color: var(--text-strong);
-        }
-
-        .nav-link::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          height: 2px;
-          width: 0;
-          background: var(--brand-primary);
-          transition: width 0.25s ease;
-        }
-
-        .nav-link:hover::after {
-          width: 100%;
-        }
-
-        /* Right Side */
-        .navbar-right {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-        }
-
-        /* CTA Button */
-        .navbar-btn {
-          padding: 10px 22px;
-          border-radius: 10px;
-          background: transparent;
-          color: var(--brand-primary);
-          border: 1px solid var(--brand-primary);
-          font-weight: 700;
-          cursor: pointer;
-          transition: all 0.25s ease;
-        }
-
-        .navbar-btn:hover {
-          background: var(--brand-primary);
-          color: var(--text-inverse);
-          box-shadow: 0 0 20px color-mix(in oklab, var(--brand-primary) 40%, transparent);
-        }
-
-        /* Theme Toggle */
-        .theme-toggle {
-          width: 36px;
-          height: 36px;
-          border-radius: 10px;
-          border: 1px solid var(--border-subtle);
-          background: var(--surface-2);
-          color: var(--text-strong);
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.25s ease;
-        }
-
-        .theme-toggle:hover {
-          background: var(--surface-3);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-          .navbar-menu {
-            display: none;
+          .cipher-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(16px);
+            background: oklch(0.9911 0 0);
+            border-bottom: 1px solid var(--glass-border);
+            font-family: 'Outfit', sans-serif;
           }
-        }
-      `}</style>
 
-      {/* Logo */}
-      <Link to="/" className="cipher-logo-container">
-        <img
-          src="https://storage.googleapis.com/annam-temp-images/logo-icon.png"
-          alt="AjraSakha"
-          className="navbar-logo-img"
-        />
-      </Link>
+          .cipher-logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+          }
 
-      {/* Links */}
-      <div className="navbar-menu">
-        <Link to="/docs/intro" className="nav-link">About</Link>
-        <Link href="/docs/category/problem-statements" className="nav-link">Problems</Link>
-        <Link href="/docs/guidelines" className="nav-link">Guidelines</Link>
-        <Link href="/docs/terms-and-condition" className="nav-link">Terms & conditions</Link>
-      </div>
+          .navbar-logo-img {
+            height: 42px;
+          }
 
-      {/* Right */}
-      <div className="navbar-right">
-        {/* <button className="theme-toggle" onClick={toggleTheme}>
-          {theme === "dark" ? "☀️" : "🌙"}
-        </button> */}
+          .navbar-menu {
+            display: flex;
+            gap: 48px;
+          }
 
-        <a href="https://luma.com/event/evt-iJBC4ZfX62dcyh1" target="_blank"
-  rel="noopener noreferrer">
-        
+          .nav-link {
+            color: var(--text-muted);
+            font-weight: 600;
+            text-decoration: none;
+          }
+
+          .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+          }
+
+          .navbar-btn {
+            padding: 10px 22px;
+            border-radius: 10px;
+            background: transparent;
+            color: var(--brand-primary);
+            border: 1px solid var(--brand-primary);
+            font-weight: 700;
+            cursor: pointer;
+          }
+
+          /* Hamburger */
+          .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+          }
+
+          .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-strong);
+            border-radius: 2px;
+          }
+
+          /* Mobile Menu */
+          .mobile-menu {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--glass-border);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transform: translateY(-120%);
+            transition: transform 0.35s ease;
+            z-index: 999;
+          }
+
+          .mobile-menu.open {
+            transform: translateY(0);
+          }
+
+          .mobile-menu a {
+          color: var(--text-strong);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+          }
+          .mobile-menu button {
+            font-size: 1rem;
+            text-align: center;
+            
+          }
+
+          @media (max-width: 768px) {
+            .navbar-menu,
+            .navbar-right {
+              display: none;
+            }
+
+            .hamburger {
+              display: flex;
+            }
+          }
+        `}</style>
+
+        {/* Logo */}
+        <Link to="/" className="cipher-logo-container">
+          <img
+            src="https://storage.googleapis.com/annam-temp-images/logo-icon.png"
+            alt="AjraSakha"
+            className="navbar-logo-img"
+          />
+        </Link>
+
+        {/* Desktop Links */}
+        <div className="navbar-menu">
+          <Link to="/docs/intro" className="nav-link">About</Link>
+          <Link to="/docs/category/problem-statements" className="nav-link">Problems</Link>
+          <Link to="/docs/guidelines" className="nav-link">Guidelines</Link>
+          <Link to="/docs/terms-and-condition" className="nav-link">Terms & conditions</Link>
+        </div>
+
+        {/* Desktop Right */}
+        <div className="navbar-right">
+          <a
+            href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="navbar-btn">Register</button>
+          </a>
+        </div>
+
+        {/* Hamburger */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <span />
+          <span />
+          <span />
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        <Link to="/docs/intro" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link to="/docs/category/problem-statements" onClick={() => setMenuOpen(false)}>Problems</Link>
+        <Link to="/docs/guidelines" onClick={() => setMenuOpen(false)}>Guidelines</Link>
+        <Link to="/docs/terms-and-condition" onClick={() => setMenuOpen(false)}>
+          Terms & conditions
+        </Link>
+
+        <a
+          href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setMenuOpen(false)}
+        >
           <button className="navbar-btn">Register</button>
         </a>
-        {/* <a
-  href="https://luma.com/event/evt-iJBC4ZfX62dcyh1"
-  class="luma-checkout--button"
-  data-luma-action="checkout"
-  data-luma-event-id="evt-iJBC4ZfX62dcyh1"
->
-  Register
-    
-</a> */}
-
-<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
       </div>
-    </nav>
+    </>
   );
 }

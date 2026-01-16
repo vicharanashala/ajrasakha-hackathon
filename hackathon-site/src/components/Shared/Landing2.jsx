@@ -31,7 +31,7 @@ export default function HackathonSchedule() {
       {
         id: 2,
         time: "Day 2",
-        phase: "Restart & Alignment",
+        phase: "Advanced Coding Marathon",
         description:
           "A focused development sprint dedicated to polishing the product. Teams improve stability, user experience, performance, and cost-efficiency while strengthening integration with the AjraSakha platform",
       },
@@ -48,7 +48,7 @@ export default function HackathonSchedule() {
         :root {
           --background: oklch(0.9911 0 0);
           --foreground: oklch(0.2046 0 0);
-          --primary: oklch(0.8348 0.1302 160.908);
+          --primary: oklch(78.983% 0.18452 155.426);
           --primary-foreground: oklch(0.2626 0.0147 166.4589);
           --border: oklch(0.9037 0 0);
           --muted-foreground: oklch(0.2435 0 0);
@@ -332,7 +332,7 @@ export default function HackathonSchedule() {
 
         {/* Date Display */}
         <div className="schedule-date">
-          <h3>Friday, 16 January 2026</h3>
+          <h3>Friday, 23 January 2026</h3>
         </div>
 
         {/* Tabs */}
