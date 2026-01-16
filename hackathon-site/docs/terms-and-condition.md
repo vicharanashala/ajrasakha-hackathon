@@ -8,8 +8,8 @@ sidebar_label: Terms & Conditions
 
 The **annam.ai Ajrasakha Hackathon** is a two-phase event conducted over two consecutive weekends.
 
-- **Phase 1:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM (48 hours)
-- **Phase 2:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
+- **Phase 1:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
+- **Phase 2:** 30 January 2026, 8:00 PM to 1 February 2026, 10:00 PM (48 hours)
 
 Together, these constitute the **"Hackathon Period."**
 
