@@ -51,7 +51,7 @@ Teams that choose to **improve or extend the existing Ajrasakha system** instead
 
 All solutions must be viable for **large-scale deployment in India**:
 
- **Do:**
+ **Do's:**
 - Minimize GPU usage and API costs
 - Use cost-effective alternatives (open-source models, cached data)
 - Prioritize expert-validated datasets over LLM calls
@@ -59,7 +59,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Request GPU access from organizers (provided selectively based on merit)
 - Bring your own datasets or request from organizers
 
- **Don't:**
+ **Don'ts:**
 - Use expensive API calls without justification
 - Rely heavily on paid LLM services (GPT-4, Claude) without caching
 - Design solutions requiring continuous GPU compute
