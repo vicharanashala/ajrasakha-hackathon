@@ -1,6 +1,9 @@
 ---
-sidebar_label: Mentor Session
+sidebar_label: Mentor Sessions
 ---
+
+# Mentor Sessions
+Note: This schedule is tentative and may be subject to change.
 
 **Phase 1:  23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM** 
 

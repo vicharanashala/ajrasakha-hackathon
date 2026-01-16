@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "@docusaurus/Link";
-
+z
 export default function CipherNavbar() {
   const [theme, setTheme] = useState("light");
   const [menuOpen, setMenuOpen] = useState(false);
