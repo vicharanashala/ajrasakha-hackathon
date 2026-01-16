@@ -15,7 +15,7 @@ Please read them carefully before participating.
 ### Technical Requirements
 
 #### Project Readiness Guidelines
-- ✅ **The hackathon is primarily based on the **problem statements**, and every submitted solution must be **clean, deployable, and production-ready**, such that it can be **easily bridged or integrated into the Ajrasakha solution ecosystem**.  
+-  **The hackathon is primarily based on the **problem statements**, and every submitted solution must be **clean, deployable, and production-ready**, such that it can be **easily bridged or integrated into the Ajrasakha solution ecosystem**.  
 This will be **thoroughly verified by the judges during evaluation**.**
 **Important Notes:**
 - Your solution must be **architecturally compatible** with Ajrasakha’s technology stack.
@@ -23,7 +23,7 @@ This will be **thoroughly verified by the judges during evaluation**.**
 - Submissions must be **deployable** without major rework.
 - Do **not blindly trust AI-generated code** — you are responsible for understanding, validating, and explaining everything you submit.
 ####
-💡 **Bonus Consideration:**  
+ **Bonus Consideration:**  
 Teams that choose to **improve or extend the existing Ajrasakha system** instead of building something parallel are **strongly encouraged** and will receive **additional weight during judging**.
 
 #### Technology Stack
@@ -45,13 +45,13 @@ Teams that choose to **improve or extend the existing Ajrasakha system** instead
 - Vector databases (Pinecone, MongoDB Atlas)
 - Maps APIs (Google Maps, Mapbox)
 
-### Cost-Effectiveness Criteria ⚠️ **CRITICAL**
+### Cost-Effectiveness Criteria  **CRITICAL**
 
 **This is a PRIMARY evaluation criterion**
 
 All solutions must be viable for **large-scale deployment in India**:
 
-✅ **Do:**
+ **Do:**
 - Minimize GPU usage and API costs
 - Use cost-effective alternatives (open-source models, cached data)
 - Prioritize expert-validated datasets over LLM calls
@@ -59,7 +59,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Request GPU access from organizers (provided selectively based on merit)
 - Bring your own datasets or request from organizers
 
-❌ **Don't:**
+ **Don't:**
 - Use expensive API calls without justification
 - Rely heavily on paid LLM services (GPT-4, Claude) without caching
 - Design solutions requiring continuous GPU compute
@@ -195,8 +195,8 @@ All solutions must be viable for **large-scale deployment in India**:
 ### Submission Deadlines
 - **Phase 1:** 18 January 2026, 10:00 PM - **STRICT**
 - **Phase 2:** 25 January 2026, 10:00 PM - **STRICT**
-- ⚠️ **No extensions will be granted**
-- 🚨 **Late submissions will NOT be accepted**
+-  **No extensions will be granted**
+-  **Late submissions will NOT be accepted**
 
 ---
 
@@ -236,7 +236,7 @@ All solutions must be viable for **large-scale deployment in India**:
 
 ## Rules & Guidelines
 
-### Do's ✅
+### Do's 
 
 **Technical:**
 - Focus on MVP functionality first
@@ -272,7 +272,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Document everything clearly
 - Credit all third-party resources
 
-### Don'ts ❌
+### Don'ts 
 
 **Technical:**
 - Don't build standalone applications
@@ -311,9 +311,9 @@ All solutions must be viable for **large-scale deployment in India**:
 ## Intellectual Property & Usage Rights
 
 ### Your Intellectual Property
-- ✅ **You own your code, designs, and assets**
-- ✅ **You can continue developing after the hackathon**
-- ✅ **You control future use of your work**
+-  **You own your code, designs, and assets**
+-  **You can continue developing after the hackathon**
+-  **You control future use of your work**
 
 ### Required Licensing
 - **GitHub Repository:** Must be public with **MIT License**

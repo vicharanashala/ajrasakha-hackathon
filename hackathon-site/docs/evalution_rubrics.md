@@ -20,23 +20,23 @@ Projects will be evaluated holistically across both phases:
 ### Additional Evaluation Factors
 
 #### Strong Positive Factors
-- ✅ Small, focused, high-impact improvements
-- ✅ Expert-validated data over LLM reliance
-- ✅ Localized responses for Indian context
-- ✅ Voice interface for accessibility
-- ✅ Offline capabilities
-- ✅ Mobile-first responsive design
-- ✅ Multi-lingual support
-- ✅ Clean, maintainable code
-- ✅ Comprehensive documentation
+-  Small, focused, high-impact improvements
+-  Expert-validated data over LLM reliance
+-  Localized responses for Indian context
+-  Voice interface for accessibility
+-  Offline capabilities
+-  Mobile-first responsive design
+-  Multi-lingual support
+-  Clean, maintainable code
+-  Comprehensive documentation
 
 #### Strong Negative Factors
-- ❌ Cannot integrate with Ajrasakha system
-- ❌ High API costs without justification
-- ❌ Requires expensive GPU for operation
-- ❌ Desktop-only, not mobile-optimized
-- ❌ Requires high bandwidth
-- ❌ English-only interface
-- ❌ Plagiarized code
-- ❌ Over-engineered solutions
-- ❌ Non-functional features
+-  Cannot integrate with Ajrasakha system
+-  High API costs without justification
+-  Requires expensive GPU for operation
+-  Desktop-only, not mobile-optimized
+-  Requires high bandwidth
+-  English-only interface
+-  Plagiarized code
+-  Over-engineered solutions
+-  Non-functional features
