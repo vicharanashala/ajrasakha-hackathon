@@ -17,8 +17,8 @@ sidebar_label: Introduction
 The **Ajrasakha Hackathon** is a two-phase competitive event where teams of four will build innovative agricultural technology solutions that integrate with the **Ajrasakha system** - annam.ai's suite of open-source agricultural software. This hackathon focuses on creating practical, cost-effective, and scalable solutions for Indian farmers.
 
 ### Event Structure
-- **Phase 1:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM (48 hours)
-- **Phase 2:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
+- **Phase 1:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
+- **Phase 2:** 30 January 2026, 8:00 PM to 1 February 2026, 10:00 PM (48 hours)
 - **Total Duration:** Two consecutive weekends, 96 hours of development time
 
 ---

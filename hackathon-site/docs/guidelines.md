@@ -51,7 +51,7 @@ Teams that choose to **improve or extend the existing Ajrasakha system** instead
 
 All solutions must be viable for **large-scale deployment in India**:
 
- **Do:**
+ **Do's:**
 - Minimize GPU usage and API costs
 - Use cost-effective alternatives (open-source models, cached data)
 - Prioritize expert-validated datasets over LLM calls
@@ -59,7 +59,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - Request GPU access from organizers (provided selectively based on merit)
 - Bring your own datasets or request from organizers
 
- **Don't:**
+ **Don'ts:**
 - Use expensive API calls without justification
 - Rely heavily on paid LLM services (GPT-4, Claude) without caching
 - Design solutions requiring continuous GPU compute
@@ -94,7 +94,7 @@ All solutions must be viable for **large-scale deployment in India**:
 ## Two-Phase Structure
 
 ### Phase 1: Build (48 Hours)
-**Timeline:** 16 January 2026, 8:00 PM to 18 January 2026, 10:00 PM
+**Timeline:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM
 
 **Objective:** Build a complete, working product
 
@@ -115,7 +115,7 @@ All solutions must be viable for **large-scale deployment in India**:
 - All teams automatically proceed to Phase 2 (no elimination)
 
 ### Phase 2: Improve & Refine (48 Hours)
-**Timeline:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM
+**Timeline:** 30 January 2026, 8:00 PM to 1 February 2026, 10:00 PM
 
 **Objective:** Improve, refine, and strengthen your Phase 1 product
 
@@ -193,8 +193,8 @@ All solutions must be viable for **large-scale deployment in India**:
 - Architecture diagrams
 
 ### Submission Deadlines
-- **Phase 1:** 18 January 2026, 10:00 PM - **STRICT**
-- **Phase 2:** 25 January 2026, 10:00 PM - **STRICT**
+- **Phase 1:** 25 January 2026, 10:00 PM - **STRICT**
+- **Phase 2:** 1 February 2026, 10:00 PM - **STRICT**
 -  **No extensions will be granted**
 -  **Late submissions will NOT be accepted**
 
@@ -475,7 +475,7 @@ Email any of the organizers
 
 ## Important Dates & Links
 
-- **Registration Deadline:** **16 January 2026 — 11:59 PM**
-- **Hackathon Start:** **16 January 2026 — 8:00 PM**
-- **Hackathon End (Phase 2 Final):** **25 January 2026 — 10:00 PM**
+- **Registration Deadline:** **23 January 2026 — 11:59 PM**
+- **Hackathon Start:** **23 January 2026 — 8:00 PM**
+- **Hackathon End (Phase 2 Final):** **1 February 2026 — 10:00 PM**
 - **Submission Portal:** **To be announced**
