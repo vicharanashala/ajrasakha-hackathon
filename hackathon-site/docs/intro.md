@@ -45,4 +45,5 @@ Work on pre-defined problem statements that address specific needs in the Ajrasa
 #### Option 2: Improve an Existing Solution
 
 Teams can enhance, extend, or optimize an existing Ajrasakha project by adding new features, improving performance, usability, scalability, or reliability in alignment with Ajrasakha’s mission.
+
 ---
