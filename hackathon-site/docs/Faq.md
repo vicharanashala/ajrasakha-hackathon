@@ -30,10 +30,10 @@ A: Yes, a live demo URL is required. Use Vercel, Netlify, Heroku, or similar.
 A: Request it from organizers. GPU access will be provided selectively based on project merit, evaluated after Phase 1.
 
 **Q: Can we use paid APIs like GPT-4?**  
-A: Yes, but you must justify costs and demonstrate cost-effectiveness for large-scale deployment. Heavy use without justification will negatively impact your score.
+A: Yes, but you must ensure costs are low.
 
 **Q: Must we support mobile?**  
-A: Yes, mobile optimization is mandatory. Most farmers use smartphones.
+A: No, mobile support is not mandatory. But it is recommended since most farmers use smartphones.
 
 **Q: How many languages must we support?**  
 A: At minimum, English plus one regional language (Hindi, Tamil, Telugu, Marathi, etc.).
@@ -89,18 +89,15 @@ A: Yes, you own your IP and can continue development.
 A: 3 scheduled checkpoints in each phase (Hours 12, 24, 36 approximately).
 
 **Q: Are mentors mandatory?**  
-A: Engagement with mentors is encouraged and evaluated (10% of mentorship round score), but not mandatory.
+A: Engagement with mentors is encouraged, but not mandatory.
 
 **Q: Can we contact mentors outside scheduled times?**  
-A: Use Discord/Slack for async questions. Scheduled sessions are for in-depth guidance.
+A: Use Cliq/Email for async questions. Scheduled sessions are for in-depth guidance.
 
 ### Misc
 
 **Q: What if we face technical issues during demo?**  
 A: Have a backup demo video ready. Judges will give you time to explain and show what works.
-
-**Q: Is there a recommended sleep schedule?**  
-A: Plan at least 2-3 hour rest periods in each 48-hour phase to maintain productivity.
 
 **Q: Can we use pre-built templates or libraries?**  
 A: Yes, with proper attribution. But majority of work should be original.
