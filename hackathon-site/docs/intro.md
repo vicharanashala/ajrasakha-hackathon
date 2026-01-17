@@ -38,20 +38,11 @@ Ajrasakha is a suite of open-source software built on:
 
 Teams may choose **ONE** of the following approaches:
 
-#### Option 1: Feature Requests (Provided by Organizers)
-Work on pre-defined feature requests that address specific needs in the Ajrasakha system. These will be shared after registration.
+#### Option 1: Problem Statements (Provided by Organizers)
 
-#### Option 2: Propose Your Own Feature
-Teams can propose and implement their own innovative features that align with Ajrasakha's mission.
+Work on pre-defined problem statements that address specific needs in the Ajrasakha system.
 
-**Examples of potential features:**
-- Voice-enabled interface with multilingual support
-- Agricultural knowledge repository and Q&A system
-- Market intelligence and real-time mandi price information
-- Government scheme eligibility checker with document parsing
-- Soil health digitization and recommendation engine
-- Predictive analytics for crop diseases or market trends
-- Community forum with expert verification
-- Offline-capable mobile-first design for rural areas
+#### Option 2: Improve an Existing Solution
 
+Teams can enhance, extend, or optimize an existing Ajrasakha project by adding new features, improving performance, usability, scalability, or reliability in alignment with Ajrasakha’s mission.
 ---
