@@ -18,7 +18,7 @@ A: Contact organizers immediately. This will be handled case-by-case.
 ### Technical
 
 **Q: What technology stack must we use?**  
-A: Core MERN stack (MongoDB, Express.js, React, Node.js) is required. You may add Python and AI models, but final solution must integrate with the MERN application.
+A: Core MERN stack (MongoDB, Express.js, React, Node.js) with Typescript is required. You may add Python and AI models, but final solution must integrate with the MERN application.
 
 **Q: Can we use existing Ajrasakha code?**  
 A: Yes, you're building features that integrate into Ajrasakha, so you'll work with the existing codebase.
@@ -86,9 +86,9 @@ A: Yes, you own your IP and can continue development.
 ### Mentorship
 
 **Q: How many mentorship sessions will we have?**  
-A: 3 scheduled checkpoints in each phase (Hours 12, 24, 36 approximately).
+A: Please check the [mentorship](https://vicharanashala.github.io/ajrasakha-hackathon/docs/session) tab for updated schedule.
 
-**Q: Are mentors mandatory?**  
+**Q: Is attending mentorship sessions mandatory?**  
 A: Engagement with mentors is encouraged, but not mandatory.
 
 **Q: Can we contact mentors outside scheduled times?**  
