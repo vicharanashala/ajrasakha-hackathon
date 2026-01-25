@@ -70,7 +70,7 @@ Display results clearly:
 
 -   **Eligibility Status**: Visual card (✓ Eligible for ₹6,000/year)
 -   **Document Proof**: Screenshot or text snippet from PDF
--   **Citation**: "Page 4, Paragraph 3: 'All farmers with landholding <2 hectares...'"
+-   **Citation**: "Page 4, Paragraph 3: 'All farmers with landholding less than 2 hectares...'"
 -   **Next Steps**: List required documents for application
 
 **Validation**: Test with 10 real farmer profiles, verify accuracy against manual PDF reading
