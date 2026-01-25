@@ -62,7 +62,7 @@ Analyze nearby markets:
 -   **Coverage**: 3-4 mandis within 100km radius
 -   **Distance Calc**: Google Maps API / Mapbox for km distance
 
-**Output**: List of {mandi, price, distance}
+**Output**: List of `{mandi, price, distance}`
 
 ##### **3. Net Profit Algorithm**
 
