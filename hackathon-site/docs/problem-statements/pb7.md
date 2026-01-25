@@ -52,7 +52,7 @@ Digitize paper cards:
 -   **Data Extracted**: N, P, K, OC (Organic Carbon), pH values
 -   **Table Recognition**: Parse standard Soil Health Card format
 
-**Output**: Structured JSON {N: 140, P: 12, K: 180, pH: 5.5}
+**Output**: Structured JSON `{N: 140, P: 12, K: 180, pH: 5.5}`
 
 ##### **2. Verify & Edit Screen**
 
@@ -68,11 +68,11 @@ Quality control:
 
 Analyze soil health:
 
--   **Ideal Standards**: Compare against crop-specific requirements (Wheat needs N > 150)
+-   **Ideal Standards**: Compare against crop-specific requirements (Wheat needs N greater than 150)
 -   **Deficiency Detection**: Flag "Nitrogen is Low by 20%"
 -   **Priority Ranking**: Order deficiencies by severity
 
-**Output**: List of {nutrient, status, deficiency_percentage}
+**Output**: List of `{nutrient, status, deficiency_percentage}`
 
 ##### **4. Marketplace Recommendations**
 
