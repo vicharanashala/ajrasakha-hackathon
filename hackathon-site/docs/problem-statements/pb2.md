@@ -52,7 +52,8 @@ Auto-tag each query with:
 -   **Local conditions**: Soil health, groundwater levels, market prices (Agmarknet API)
 -   **Active alerts**: Government advisories, pest warnings
 
-**Output**: Each query becomes {original_query + translated_query + context_metadata}
+**Output**: Each query becomes (original_query + translated_query + context_metadata)
+
 
 ##### **2. Knowledge Graph Builder**
 
