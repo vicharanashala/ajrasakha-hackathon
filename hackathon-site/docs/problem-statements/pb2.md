@@ -1,4 +1,6 @@
 ---
+title: Problem Statement 2
+sidebar_label: Problem Statement 2
 sidebar_position: 2
 ---
 
