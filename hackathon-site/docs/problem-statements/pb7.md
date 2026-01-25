@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 ### "Mitti-Scan" - Soil Health Card Digitizer + Actionizer
 
 **Focus:** OCR (Optical Character Recognition) | Agricultural Chemistry | Product Recommendations | Marketplace Integration
