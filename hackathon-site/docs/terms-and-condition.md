@@ -19,7 +19,7 @@ This Hackathon is governed by these **Terms and Conditions ("Terms")**, which fo
 
 ## Eligibility
 
-- The Hackathon is an **internal event** restricted exclusively to members of the current internship (**Winternship**) cohort.  
+- The Hackathon is an **internal event** restricted exclusively to members of the current internship- Winternship(Founders Keepers) and Pinternship(Euclideans) cohorts.  
 - Participation is **voluntary but strongly encouraged**.  
 - **Outsiders, external participants, and non-interns are strictly prohibited**.
 
