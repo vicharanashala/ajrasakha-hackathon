@@ -295,7 +295,7 @@ export default function CipherThon() {
             </div>
 
             <p className="cipher-description">
-              A 48-hour hands-on hackathon designed for builders who learn by doing. Work in teams to solve real agricultural challenges and create meaningful features that integrate with a live production system—empowering farmers and strengthening digital agricultural ecosystems.
+              A hands-on hackathon designed for builders who learn by doing. Work in teams to solve real agricultural challenges and create meaningful features that integrate with a live production system—empowering farmers and strengthening digital agricultural ecosystems.
             </p>
 
             <div className="cipher-buttons">
