@@ -3,7 +3,7 @@
 
 ### Registration & Eligibility
 
-**Q: Can I participate if I'm not in the Winternship cohort?**  
+**Q: Can I participate if I'm not in the Winternship/Pinternship cohort?**  
 A: No, this is an internal event exclusively for current Winternship cohort members.
 
 **Q: Can I participate solo or with a team of 3?**  
@@ -75,7 +75,7 @@ A: Based on Ajrasakha integration (25%), cost-effectiveness (20%), technical qua
 A: Not necessarily. annam.ai may withhold prizes if submissions don't meet quality standards.
 
 **Q: When will winners be announced?**  
-A: Within 1-2 weeks after Phase 2 completion.
+A: This is a recurring hackathon, winners will be announced every month based on submissions.
 
 **Q: What if we disagree with judging?**  
 A: Judges' decisions are final and binding. No appeals.
