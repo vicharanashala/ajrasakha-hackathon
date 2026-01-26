@@ -6,10 +6,10 @@ sidebar_label: Terms & Conditions
 # Terms & Conditions
 ## Ajrasakha Hackathon 
 
-The **annam.ai Ajrasakha Hackathon** is a two-phase event conducted over two consecutive weekends.
+The **annam.ai Ajrasakha Hackathon** is a **recurring monthly hackathon program** conducted in two structured phases every month.
 
-- **Phase 1:** 23 January 2026, 8:00 PM to 25 January 2026, 10:00 PM (48 hours)
-- **Phase 2:** 30 January 2026, 8:00 PM to 1 February 2026, 10:00 PM (48 hours)
+- **Phase 1:** First two (2) weeks of each month  
+- **Phase 2:** Following two (2) weeks of the same month  
 
 Together, these constitute the **"Hackathon Period."**
 
@@ -42,18 +42,18 @@ annam.ai reserves the right to **disqualify any entry** if it determines that a 
 
 ## Hackathon Structure
 
-The Hackathon consists of two phases:
+The Hackathon consists of two phases every month:
 
 ### Phase 1
-- Teams must build a **complete, working product** within **48 hours**.  
+- Teams must build a **complete, working product** within the first **two (2) weeks** of the Hackathon Period.  
 - Partial prototypes are discouraged unless a **clear split of deliverables** between Phase 1 and Phase 2 is documented.  
 - At the end of Phase 1, teams must submit:
-  - Source code
-  - Application
-  - A short video explaining what was built, how it works, and why it matters
+  - Source code  
+  - Application  
+  - A short video explaining what was built, how it works, and why it matters  
 
 ### Phase 2
-- Teams must **improve, refine, and strengthen** their Phase 1 product within another **48-hour window**.  
+- Teams must **improve, refine, and strengthen** their Phase 1 product during the following **two (2) weeks**.  
 - **All teams automatically proceed** to Phase 2. There is **no elimination** after Phase 1.
 
 Organizers may provide feedback after Phase 1, but feedback is **not guaranteed**.  
@@ -70,16 +70,15 @@ Teams may:
 - **Propose and implement their own features**
 
 All solutions must be developed in accordance with the **annam.ai technology stack** and be compatible with the existing **Ajrasakha codebase**.
+
 The Ajrasakha system primarily uses:
 - **TypeScript-based MERN stack** for application development  
   (MongoDB, Express.js, React, Node.js)
 - **Python** for AI/ML components, using internal libraries and approved open-source frameworks
 
-
 Additional technologies (e.g., **Python**, AI models) may be used as long as the **final solution integrates with the MERN-based system**.
 
 > Projects that do not adhere to the **annam.ai technology stack**, or are evaluated to be **unmaintainable due to severely disorganized code or poor structure**, will be **considered failures**, regardless of technical sophistication.
-
 
 ---
 
@@ -87,11 +86,9 @@ Additional technologies (e.g., **Python**, AI models) may be used as long as the
 
 Cost-effectiveness is **highly valued and strongly encouraged**, particularly with respect to large-scale deployment in India. Teams that deliver **cost-effective solutions while effectively solving the problem statement** will have a **competitive advantage** in the hackathon evaluation.
 
-
 Teams must:
 - Minimize **GPU usage** and **API costs**
-- Ensure that solutions demonstrate **improved efficiency, effectiveness, and time savings** when compared to equivalent human-operated processes.
-
+- Ensure that solutions demonstrate **improved efficiency, effectiveness, and time savings** when compared to equivalent human-operated processes
 - Justify any **high-cost API usage**
 - Prioritize **expert-validated data** and **localized responses**
 - Prefer **curated datasets** over heavy LLM reliance
@@ -102,12 +99,12 @@ GPU access will be provided **selectively** based on merit after Phase 1.
 
 ## Submission Requirements
 
-At the end of Phase 1 and Phase 2, teams must submit:
+At the end of **Phase 1 and Phase 2** each month, teams must submit:
 
 - Complete **source code**
 - A **working, deployable application**
 - A **short demo video**
-- **Documentation** describing the application, its functionality, and architecture.
+- **Documentation** describing the application, its functionality, and architecture
 - Any additional materials requested by organizers
 
 The project must be:
@@ -132,7 +129,6 @@ Small, focused, high-impact solutions are encouraged.
 All decisions by **annam.ai are final and binding**.
 
 ---
-
 
 ## Intellectual Property & Usage Rights
 
@@ -177,7 +173,7 @@ All decisions are final and governed by the **laws of India**.
 All participants must:
 
 - Complete team registration on time
-- Familiarize yourself with the existing solutions and ongoing work being developed by annam.ai.
+- Familiarize themselves with the existing solutions and ongoing work being developed by annam.ai
 - Execute Phase 1 and Phase 2 work
 - Complete all internship obligations
 - Maintain communication with organizers
