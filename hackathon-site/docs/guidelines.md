@@ -161,6 +161,7 @@ For **both phases**, submit:
 - Don’t submit non-working demos  
 - Don’t skip documentation  
 - Don’t assume high digital literacy  
+- Don’t participate multiple times (rule may change in the future).
 
 ---
 

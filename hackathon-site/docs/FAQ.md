@@ -15,6 +15,15 @@ A: No, you can only register as a member of one team.
 **Q: What if one team member drops out?**  
 A: Contact organizers immediately. This will be handled case-by-case.
 
+**Q: Is this hackathon conducted throughout the year?**  
+A: The hackathon is conducted multiple times, every 30 days.
+
+**Q: Can students participate more than once?**  
+A: No, students cannot participate multiple times; they can only participate once. This rule may change in the future.
+ 
+**Q: How many problem statements does a team need to resolve?**  
+A: Each team can work on either one problem statement or one existing project, not multiple.
+
 ### Technical
 
 **Q: What technology stack must we use?**  

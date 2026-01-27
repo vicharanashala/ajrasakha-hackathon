@@ -20,7 +20,7 @@ The **Ajrasakha Hackathon** is a **recurring monthly, two-phase challenge** wher
 
 ---
 
-## The Problem Statement
+<!-- ## The Problem Statement -->
 
 ### Objective
 Build innovative features and solutions that integrate seamlessly with the **Ajrasakha agricultural knowledge platform**. The system connects farmers with agricultural experts, educators, and fellow farmers, enabling affordable, accessible, and practical learning experiences focused on improving farming practices, crop management, market access, and sustainable agriculture.

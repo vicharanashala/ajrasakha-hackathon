@@ -119,7 +119,13 @@ To develop a deep learning–based vision model that can accurately identify pla
 
 * **Integration with Advisory Systems:** Connect predictions with automated notifications and guidance for farmers.
 
-  
+* **Explore Other Models:** Experiment with different architectures such as ResNet, DenseNet, Vision Transformers, or Vision-Language Models (VLMs) to further improve performance and accuracy.
+
+* **Ensemble Approaches:** Combine predictions from multiple models to boost overall robustness and reduce misclassification.
+
+* **Explainable AI (XAI):** Implement techniques like Grad-CAM or attention maps to provide visual explanations of model decisions, helping farmers understand predictions.
+
+* **Active Learning & Semi-Supervised Learning:** Use unlabelled or partially labelled data to continuously improve model performance without extensive manual annotation.
 
 ### Impact
 
