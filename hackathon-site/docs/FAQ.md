@@ -114,6 +114,118 @@ A: Yes, with proper attribution. But majority of work should be original.
 **Q: What if we have a health emergency?**  
 A: Contact organizers immediately. Your health is the priority.
 
+### Participant FAQs
+**Q: Will any mentorship or guidance be provided for the participating teams?**
+
+A: Yes, participating teams will receive mentorship and guidance throughout the program to support their progress and development. At least one mentorship session will be conducted each week, giving teams the opportunity to join, interact with mentors, ask questions, and receive valuable advice.
+
+**Q: Can you provide Soil Health Cards for use in this project?**
+
+A: Real farmers’ official Soil Health Card records cannot be shared due to data privacy and access limitations. However, realistic sample Soil Health Card data based on standard formats can be used for development, OCR testing, and feature validation. Teams are encouraged to design their solutions to work with typical Soil Health Card structures and values.
+
+---
+
+### Sample Soil Health Card (Demo Data)
+
+**Farmer Name:** Ramesh Patel  
+**Village:** Rampur  
+**District:** Sehore  
+**State:** Madhya Pradesh  
+**Land Area:** 2.0 ha  
+
+| Parameter | Value | Unit | Rating |
+|-----------|-------|------|--------|
+| Nitrogen (N) | 140 | kg/ha | Low |
+| Phosphorus (P) | 12 | kg/ha | Low |
+| Potassium (K) | 180 | kg/ha | Medium |
+| Organic Carbon (OC) | 0.42 | % | Low |
+| pH | 5.5 | — | Acidic |
+| EC | 0.3 | dS/m | Normal |
+| Sulphur (S) | 8 | ppm | Low |
+| Zinc (Zn) | 0.5 | ppm | Deficient |
+| Iron (Fe) | 4.2 | ppm | Sufficient |
+| Copper (Cu) | 0.6 | ppm | Sufficient |
+| Manganese (Mn) | 2.1 | ppm | Sufficient |
+| Boron (B) | 0.3 | ppm | Low |
+
+**Q: Are there recommended data sources or best practices the jury expects teams to follow for mandi price and transport cost integration?**
+
+A: Teams are encouraged to use reliable and publicly available data sources wherever possible. For mandi prices, platforms such as Agmarknet or other government/open agriculture market datasets are recommended. If live integration is not feasible, teams may use well-structured mock datasets that realistically simulate market price variations.
+
+For transport cost calculations, teams should base estimates on practical per-kilometer vehicle operating costs (fuel, rental, driver charges, etc.). Clearly stating assumptions (e.g., ₹/km rate per vehicle type) is considered good practice.
+
+The jury will primarily evaluate:
+- Logical accuracy of the profit calculation model  
+- Realistic and well-justified data assumptions  
+- Clear methodology for combining price, distance, and transport cost  
+
+Live APIs are a bonus, but a well-designed, transparent, and scalable data model is more important than perfect real-time integration.
+
+**Q: In the Tech Stack section of Problem Statement 5 – Niti-Setu, LLMs like OpenAI, Gemini, and Llama are mentioned. Can we also use open-source models such as GPT-OSS for better cost-effectiveness, or is it mandatory to use the specified LLMs?**
+
+A: Yes, teams are free to use open-source or alternative LLMs, including GPT-OSS or other comparable models, especially if it improves cost-effectiveness and feasibility. The listed LLMs are suggestions, not strict requirements. The focus will be on how effectively the AI component solves the problem, rather than on the specific model used.
+
+**Q: Can you provide links to recommended data sources for eNAM-integrated and non-integrated APMCs, including market prices and historical data?**
+
+**A:** Yes — below are reliable official and public sources teams can use for mandi price data, APMC lists, and historical information:
+
+###  Official Government Sources
+- **eNAM – National Agriculture Market Portal**  
+  https://www.enam.gov.in/web :contentReference[oaicite:0]{index=0}
+
+- **eNAM Historical Trade & Price Data Dashboard**  
+  https://www.enam.gov.in/web/dashboard/Historical :contentReference[oaicite:1]{index=1}
+
+- **eNAM Mandis Online (list of mandis doing online trading)**  
+  https://www.enam.gov.in/web/mandis-online :contentReference[oaicite:2]{index=2}
+
+- **Agmarknet – Daily mandi price & arrival dataset (via India Data Portal)**  
+  https://ckandev.indiadataportal.com/dataset/apmc-arrivals-and-prices :contentReference[oaicite:3]{index=3}
+
+###  Third-Party/Market Data Aggregators
+- **Mandibhav.in – Mandi prices & historical trends (4000+ mandis)**  
+  https://mandibhav.in/ :contentReference[oaicite:4]{index=4}
+
+- **AgriRate – Mandi market rates across India**  
+  https://agrirate.com/ :contentReference[oaicite:5]{index=5}
+
+- **Live mandi prices dashboard (finnid.in)**  
+  https://finnid.in/MarketLinkage/LivePrices :contentReference[oaicite:6]{index=6}
+
+---
+
+Teams can combine these sources for **real-time prices**, **historical trends**, and **APMC lists** to build data feeds and analytics pipelines. Using the government APIs and datasets as anchors ensures accuracy and credibility, while third-party sites help with broader coverage and ease of access.
+::contentReference[oaicite:7]{index=7}
+
+**Q: Could you please provide us with Agmarknet and eNAM API links or official data sources we can use for the “Krishi-Route” Profit & Logistics Optimizer?**
+
+A: While official API access keys won’t be directly provided by the organizers, the following official and public resources are available for mandi price and APMC data. Teams can integrate these into their solutions or use them to build mock/sandbox APIs:
+
+###  eNAM (National Agriculture Market) – Official Government Portal
+- **eNAM Official Portal (APMC listings & prices)**  
+  https://www.enam.gov.in/web/ (Official eNAM market platform) :contentReference[oaicite:0]{index=0}
+
+- **eNAM Trade Details & Price Dashboard**  
+  https://enam.gov.in/web/dashboard/trade-data (Commodity prices and trade info) :contentReference[oaicite:1]{index=1}
+
+###  Agmarknet – Government Market Price Data
+- **AGMARKNET Official Portal (daily mandi prices & arrivals)**  
+  http://www.agmarknet.gov.in/ (Government price data platform) :contentReference[oaicite:2]{index=2}
+
+- **Data.gov.in – Agmarknet Daily Price Data & API Export**  
+  https://data.gov.in/resources/current-daily-price-various-commodities-various-markets-mandi/api (Official API export for daily mandi price data) :contentReference[oaicite:3]{index=3}
+
+###  Developer / Community Resources (Unofficial APIs & Tools)
+- **GitHub – Agmarknet API (community project)**  
+  https://github.com/Prajwal-Shrimali/agmarknetAPI (Unofficial API via scraping, useful for prototyping) :contentReference[oaicite:4]{index=4}
+
+---
+
+Teams should refer to the **official eNAM and Agmarknet portals for authoritative data** and use the data.gov.in API endpoint to access structured historical and current price datasets. Unofficial APIs and GitHub projects can help bootstrap integration during prototyping.
+
+
+
+
 
 
 
