@@ -223,6 +223,51 @@ A: While official API access keys won’t be directly provided by the organizers
 
 Teams should refer to the **official eNAM and Agmarknet portals for authoritative data** and use the data.gov.in API endpoint to access structured historical and current price datasets. Unofficial APIs and GitHub projects can help bootstrap integration during prototyping.
 
+**Q: This is our first hackathon and we didn’t see any information about Git repository naming. Is there any issue with how we’ve named it?**
+
+A: Thank you for checking. There is no strict naming convention required for the Git repository unless it is specifically mentioned in the submission guidelines. You may keep your current repository name.
+
+However, please make sure your **project title, team name, and problem statement number** are clearly mentioned in the README file so evaluators can easily identify your submission. If any specific naming format becomes necessary, it will be communicated in advance.
+
+**Q: We are currently in the planning and MVP scoping phase. Could you please provide guidance on recommended data sources and best practices for integrating multi-source mandi data into the Ajrasakha ecosystem while keeping costs low?**
+
+A: For planning your MVP and integrating multi-source mandi data in a cost-effective way, consider the following recommended sources and best practices:
+
+###  Best Practices for Integration
+1. **Start with Structured Public APIs:**  
+   Use eNAM and data.gov.in APIs for the backbone of price and APMC lists. This reduces development overhead and ensures government-verified data.
+
+2. **Design for Multiple Formats:**  
+   Mandis and state portals may provide CSV, Excel, or HTML tables. Build flexible connectors (scrapers/parsers) that can normalize diverse formats into a single schema.
+
+3. **Normalize Data Early:**  
+   Standardize:
+   - Crop names and units (e.g., kg, quintal)
+   - Mandi identifiers (state, district, mandi name)
+   - Date formats  
+   This simplifies analytics downstream.
+
+4. **Caching and Incremental Updates:**  
+   Avoid frequent heavy requests by:
+   - Caching fetched data
+   - Using incremental updates (only new/changed records)
+
+5. **Mock or Sandbox First:**  
+   If live APIs are limited or rate-restricted, start with well-structured mock datasets for MVP testing.
+
+6. **Monitor Data Quality:**  
+   Track missing values, stale sources, or conflicting prices with quality flags so your ecosystem handles real-world data noise.
+
+7. **Leverage Open-Source Tools:**  
+   Use open-source scraping tools (e.g., Cheerio, Puppeteer) and lightweight cloud functions (to run cron jobs) to reduce operational cost.
+
+###  Cost-Saving Tips
+- Avoid heavy paid APIs unless critical; start with free government sources.
+- Use serverless functions (AWS Lambda / Cloud Functions) for scheduled data pulls to reduce infrastructure cost.
+- Store normalized data in a lightweight database (MongoDB Atlas free tier or similar) during MVP phase.
+
+By focusing on structured public sources first and building robust normalization pipelines, your MVP can deliver strong multi-source mandi data integration while keeping costs low and scaling later as needed.
+
 
 
 
