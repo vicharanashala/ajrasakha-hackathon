@@ -167,7 +167,7 @@ A: Yes, teams are free to use open-source or alternative LLMs, including GPT-OSS
 
 **Q: Can you provide links to recommended data sources for eNAM-integrated and non-integrated APMCs, including market prices and historical data?**
 
-**A:** Yes — below are reliable official and public sources teams can use for mandi price data, APMC lists, and historical information:
+A: Yes — below are reliable official and public sources teams can use for mandi price data, APMC lists, and historical information:
 
 ###  Official Government Sources
 - **eNAM – National Agriculture Market Portal**  
