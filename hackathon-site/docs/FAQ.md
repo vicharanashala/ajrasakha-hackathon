@@ -179,18 +179,7 @@ A: Yes, teams are free to use open-source or alternative LLMs, including GPT-OSS
 - **eNAM Mandis Online (list of mandis doing online trading)**  
   https://www.enam.gov.in/web/mandis-online :contentReference[oaicite:2]{index=2}
 
-- **Agmarknet – Daily mandi price & arrival dataset (via India Data Portal)**  
-  https://ckandev.indiadataportal.com/dataset/apmc-arrivals-and-prices :contentReference[oaicite:3]{index=3}
 
-###  Third-Party/Market Data Aggregators
-- **Mandibhav.in – Mandi prices & historical trends (4000+ mandis)**  
-  https://mandibhav.in/ :contentReference[oaicite:4]{index=4}
-
-- **AgriRate – Mandi market rates across India**  
-  https://agrirate.com/ :contentReference[oaicite:5]{index=5}
-
-- **Live mandi prices dashboard (finnid.in)**  
-  https://finnid.in/MarketLinkage/LivePrices :contentReference[oaicite:6]{index=6}
 
 ---
 
