@@ -184,7 +184,7 @@ A: Yes — below are reliable official and public sources teams can use for mand
 ---
 
 Teams can combine these sources for **real-time prices**, **historical trends**, and **APMC lists** to build data feeds and analytics pipelines. Using the government APIs and datasets as anchors ensures accuracy and credibility, while third-party sites help with broader coverage and ease of access.
-::contentReference[oaicite:7]{index=7}
+
 
 **Q: Could you please provide us with Agmarknet and eNAM API links or official data sources we can use for the “Krishi-Route” Profit & Logistics Optimizer?**
 
