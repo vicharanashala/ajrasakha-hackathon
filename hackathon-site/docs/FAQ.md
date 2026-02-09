@@ -214,7 +214,7 @@ Teams should refer to the **official eNAM and Agmarknet portals for authoritativ
 
 **Q: This is our first hackathon and we didn’t see any information about Git repository naming. Is there any issue with how we’ve named it?**
 
-A: Thank you for checking. There is no strict naming convention required for the Git repository unless it is specifically mentioned in the submission guidelines. You may keep your current repository name.
+A: Thank you for checking. There is no strict naming convention required for the Git repository . You may keep your current repository name.
 
 However, please make sure your **project title, team name, and problem statement number** are clearly mentioned in the README file so evaluators can easily identify your submission. If any specific naming format becomes necessary, it will be communicated in advance.
 
